@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="पीक तपशील - वाढीचे टप्पे, पोषण, किडे आणि रोग">
+    <title>पीक तपशील - शिवराज कृषी सेवा केंद्र</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="crops.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="shop-name" data-lang="cropDetails">पीक तपशील</div>
+            </div>
+            <button class="lang-toggle" onclick="switchLanguage()">
+                <i class="fas fa-language"></i> English
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div id="crop-details-container">
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> <span data-lang="loading">लोड होत आहे...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <div class="sticky-footer">
+        <button class="btn btn-call" onclick="makeCall()" style="width: 100%;">
+            <i class="fas fa-phone"></i>
+            <span data-lang="contactShop">दुकानाशी संपर्क साधा</span>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/language.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/crops.js"></script>
+
+    <script>
+        // Initialize app
+        async function initApp() {
+            await initLanguage();
+            await loadShopInfo();
+            await renderCropDetails();
+        }
+
+        // Run on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+            initApp();
+        }
+    </script>
+</body>
+
+</html>

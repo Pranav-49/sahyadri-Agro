@@ -1,0 +1,1231 @@
+{
+    "crops": [
+        {
+            "id": "jowar",
+            "nameEn": "Sorghum (Jowar)",
+            "nameMr": "ज्वारी",
+            "season": "kharif",
+            "duration": "110-120",
+            "soilType": "काळी मातीत उत्तम / Black soil ideal",
+            "image": "assets/images/crops/jowar/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/jowar/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/jowar/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-70",
+                    "image": "assets/images/crops/jowar/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "110-120",
+                    "image": "assets/images/crops/jowar/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "80-100 kg/ha",
+                "p": "40-50 kg/ha",
+                "k": "40 kg/ha",
+                "micro": "Zinc, Iron"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Shoot Fly",
+                    "nameMr": "कोंब माशी",
+                    "symptoms": "मध्यवर्ती पान सुकणे",
+                    "prevention": "बीज उपचार",
+                    "solution": "कीटकनाशक फवारणी",
+                    "image": "assets/images/pests/shootfly.jpg"
+                },
+                {
+                    "stage": "flowering",
+                    "name": "Stem Borer",
+                    "nameMr": "खोड पोखरणारा किडा",
+                    "symptoms": "खोड आतून पोखरणे",
+                    "prevention": "साफसफाई",
+                    "solution": "क्लोरपायरीफॉस",
+                    "image": "assets/images/pests/stemborer.jpg"
+                }
+            ]
+        },
+        {
+            "id": "bajra",
+            "nameEn": "Pearl Millet (Bajra)",
+            "nameMr": "बाजरी",
+            "season": "kharif",
+            "duration": "75-90",
+            "soilType": "वाळूमिश्रित / Sandy loam",
+            "image": "assets/images/crops/bajra/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "5-7",
+                    "image": "assets/images/crops/bajra/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "25-35",
+                    "image": "assets/images/crops/bajra/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "45-55",
+                    "image": "assets/images/crops/bajra/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "75-90",
+                    "image": "assets/images/crops/bajra/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "60-80 kg/ha",
+                "p": "40 kg/ha",
+                "k": "20 kg/ha",
+                "micro": "Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Downy Mildew",
+                    "nameMr": "पांढरा बुरशी",
+                    "symptoms": "पाने पिवळी पडणे",
+                    "prevention": "प्रतिरोधक जाती",
+                    "solution": "मेटालॅक्झिल",
+                    "image": "assets/images/pests/mildew.jpg"
+                }
+            ]
+        },
+        {
+            "id": "sugarcane",
+            "nameEn": "Sugarcane",
+            "nameMr": "ऊस",
+            "season": "rabi",
+            "duration": "300-365",
+            "soilType": "सखल काळी मातीत उत्तम / Deep black soil",
+            "image": "assets/images/crops/sugarcane/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "20-30",
+                    "image": "assets/images/crops/sugarcane/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "120-150",
+                    "image": "assets/images/crops/sugarcane/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "240-270",
+                    "image": "assets/images/crops/sugarcane/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "300-365",
+                    "image": "assets/images/crops/sugarcane/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "250-300 kg/ha",
+                "p": "100 kg/ha",
+                "k": "100 kg/ha",
+                "micro": "Zinc, Iron, Manganese"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Early Shoot Borer",
+                    "nameMr": "लवकर कोंब पोखरणारा",
+                    "symptoms": "कोंब सुकणे",
+                    "prevention": "निरोगी रोपे",
+                    "solution": "कार्बोफ्युरान",
+                    "image": "assets/images/pests/sugarcane_borer.jpg"
+                },
+                {
+                    "stage": "vegetative",
+                    "name": "Red Rot",
+                    "nameMr": "लाल सडण",
+                    "symptoms": "पाने लाल पडणे",
+                    "prevention": "प्रतिरोधक जाती",
+                    "solution": "कार्बेंडाझिम",
+                    "image": "assets/images/pests/redrot.jpg"
+                }
+            ]
+        },
+        {
+            "id": "pomegranate",
+            "nameEn": "Pomegranate",
+            "nameMr": "डाळिंब",
+            "season": "summer",
+            "duration": "180-210",
+            "soilType": "जलनिचरा असलेली / Well-drained",
+            "image": "assets/images/crops/pomegranate/main.jpg",
+            "stages": [
+                {
+                    "name": "vegetative",
+                    "days": "30-45",
+                    "image": "assets/images/crops/pomegranate/stage1.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-90",
+                    "image": "assets/images/crops/pomegranate/stage2.jpg"
+                },
+                {
+                    "name": "fruiting",
+                    "days": "120-150",
+                    "image": "assets/images/crops/pomegranate/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "180-210",
+                    "image": "assets/images/crops/pomegranate/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "250 kg/ha",
+                "p": "125 kg/ha",
+                "k": "125 kg/ha",
+                "micro": "Zinc, Boron"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Fruit Borer",
+                    "nameMr": "फळ पोखरणारा",
+                    "symptoms": "फळातून छिद्र",
+                    "prevention": "फेरोमोन ट्रॅप",
+                    "solution": "स्पिनोसॅड",
+                    "image": "assets/images/pests/fruitborer.jpg"
+                },
+                {
+                    "stage": "flowering",
+                    "name": "Bacterial Blight",
+                    "nameMr": "जिवाणु झुलूस",
+                    "symptoms": "पाने काळी पडणे",
+                    "prevention": "बोर्डो मिश्रण",
+                    "solution": "कॉपर ऑक्सिक्लोराइड",
+                    "image": "assets/images/pests/blight.jpg"
+                }
+            ]
+        },
+        {
+            "id": "wheat",
+            "nameEn": "Wheat",
+            "nameMr": "गहू",
+            "season": "rabi",
+            "duration": "120-150",
+            "soilType": "सुपीक चिकणमाती / Fertile clay loam",
+            "image": "assets/images/crops/wheat/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/wheat/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "40-60",
+                    "image": "assets/images/crops/wheat/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "80-100",
+                    "image": "assets/images/crops/wheat/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "120-150",
+                    "image": "assets/images/crops/wheat/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "120 kg/ha",
+                "p": "60 kg/ha",
+                "k": "40 kg/ha",
+                "micro": "Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Aphids",
+                    "nameMr": "माजी",
+                    "symptoms": "पाने चुरगळणे",
+                    "prevention": "लवकर पेरणी",
+                    "solution": "इमिडाक्लोप्रिड",
+                    "image": "assets/images/pests/aphids.jpg"
+                }
+            ]
+        },
+        {
+            "id": "chickpea",
+            "nameEn": "Chickpea (Gram)",
+            "nameMr": "हरभरा",
+            "season": "rabi",
+            "duration": "100-120",
+            "soilType": "काळी मातीत उत्तम / Black soil",
+            "image": "assets/images/crops/chickpea/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/chickpea/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/chickpea/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-75",
+                    "image": "assets/images/crops/chickpea/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "100-120",
+                    "image": "assets/images/crops/chickpea/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "20 kg/ha",
+                "p": "40 kg/ha",
+                "k": "20 kg/ha",
+                "micro": "Boron, Molybdenum"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Pod Borer",
+                    "nameMr": "शेंगा पोखरणारा",
+                    "symptoms": "शेंगा खराब होणे",
+                    "prevention": "एनपीव्ही",
+                    "solution": "इमामेक्टिन बेंझोएट",
+                    "image": "assets/images/pests/podborer.jpg"
+                }
+            ]
+        },
+        {
+            "id": "tur",
+            "nameEn": "Pigeon Pea (Tur)",
+            "nameMr": "तूर",
+            "season": "kharif",
+            "duration": "150-180",
+            "soilType": "सर्व प्रकारची / All types",
+            "image": "assets/images/crops/tur/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "10-12",
+                    "image": "assets/images/crops/tur/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "60-80",
+                    "image": "assets/images/crops/tur/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "100-120",
+                    "image": "assets/images/crops/tur/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "150-180",
+                    "image": "assets/images/crops/tur/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "25 kg/ha",
+                "p": "50 kg/ha",
+                "k": "25 kg/ha",
+                "micro": "Sulphur"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Wilt Disease",
+                    "nameMr": "कोमजण्याचा रोग",
+                    "symptoms": "वनस्पती कोमजणे",
+                    "prevention": "प्रतिरोधक जाती",
+                    "solution": "ट्रायकोडर्मा",
+                    "image": "assets/images/pests/wilt.jpg"
+                }
+            ]
+        },
+        {
+            "id": "grapes",
+            "nameEn": "Grapes",
+            "nameMr": "द्राक्षे",
+            "season": "summer",
+            "duration": "120-150",
+            "soilType": "जलनिचरा असलेली / Well-drained",
+            "image": "assets/images/crops/grapes/main.jpg",
+            "stages": [
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/grapes/stage1.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "50-60",
+                    "image": "assets/images/crops/grapes/stage2.jpg"
+                },
+                {
+                    "name": "fruiting",
+                    "days": "90-110",
+                    "image": "assets/images/crops/grapes/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "120-150",
+                    "image": "assets/images/crops/grapes/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "200 kg/ha",
+                "p": "100 kg/ha",
+                "k": "150 kg/ha",
+                "micro": "Zinc, Boron"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Downy Mildew",
+                    "nameMr": "पांढरा बुरशी",
+                    "symptoms": "पानांवर डाग",
+                    "prevention": "हवेचा उत्तम प्रवाह",
+                    "solution": "मेटालॅक्झिल",
+                    "image": "assets/images/pests/grape_mildew.jpg"
+                }
+            ]
+        },
+        {
+            "id": "soybean",
+            "nameEn": "Soybean",
+            "nameMr": "सोयाबीन",
+            "season": "kharif",
+            "duration": "90-110",
+            "soilType": "काळी चिकणमाती / Black clay",
+            "image": "assets/images/crops/soybean/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "5-7",
+                    "image": "assets/images/crops/soybean/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/soybean/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "50-65",
+                    "image": "assets/images/crops/soybean/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "90-110",
+                    "image": "assets/images/crops/soybean/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "25 kg/ha",
+                "p": "60 kg/ha",
+                "k": "30 kg/ha",
+                "micro": "Sulphur, Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Leaf Miner",
+                    "nameMr": "पान खाणारा किडा",
+                    "symptoms": "पानांवर पांढरे डाग",
+                    "prevention": "लवकर पेरणी",
+                    "solution": "प्रोफेनोफॉस",
+                    "image": "assets/images/pests/leafminer.jpg"
+                }
+            ]
+        },
+        {
+            "id": "maize",
+            "nameEn": "Maize (Corn)",
+            "nameMr": "मका",
+            "season": "kharif",
+            "duration": "90-120",
+            "soilType": "सुपीक मातीत उत्तम / Fertile soil",
+            "image": "assets/images/crops/maize/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/maize/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-45",
+                    "image": "assets/images/crops/maize/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-70",
+                    "image": "assets/images/crops/maize/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "90-120",
+                    "image": "assets/images/crops/maize/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "120 kg/ha",
+                "p": "60 kg/ha",
+                "k": "40 kg/ha",
+                "micro": "Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Fall Armyworm",
+                    "nameMr": "फॉल आर्मीवर्म",
+                    "symptoms": "पाने खाल्ले जाणे",
+                    "prevention": "फेरोमोन ट्रॅप",
+                    "solution": "इमामेक्टिन",
+                    "image": "assets/images/pests/armyworm.jpg"
+                }
+            ]
+        },
+        {
+            "id": "onion",
+            "nameEn": "Onion",
+            "nameMr": "कांदा",
+            "season": "rabi",
+            "duration": "120-150",
+            "soilType": "सुपीक चिकणमाती / Fertile loam",
+            "image": "assets/images/crops/onion/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "10-15",
+                    "image": "assets/images/crops/onion/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "60-75",
+                    "image": "assets/images/crops/onion/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "90-100",
+                    "image": "assets/images/crops/onion/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "120-150",
+                    "image": "assets/images/crops/onion/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "100 kg/ha",
+                "p": "50 kg/ha",
+                "k": "100 kg/ha",
+                "micro": "Sulphur"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Thrips",
+                    "nameMr": "थ्रिप्स",
+                    "symptoms": "पाने पांढरी पडणे",
+                    "prevention": "पाण्याचा योग्य व्यवस्थापन",
+                    "solution": "इमिडाक्लोप्रिड",
+                    "image": "assets/images/pests/thrips.jpg"
+                }
+            ]
+        },
+        {
+            "id": "safflower",
+            "nameEn": "Safflower",
+            "nameMr": "करडई",
+            "season": "rabi",
+            "duration": "120-140",
+            "soilType": "काळी मातीत उत्तम / Black soil",
+            "image": "assets/images/crops/safflower/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "8-10",
+                    "image": "assets/images/crops/safflower/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "40-50",
+                    "image": "assets/images/crops/safflower/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "80-100",
+                    "image": "assets/images/crops/safflower/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "120-140",
+                    "image": "assets/images/crops/safflower/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "60 kg/ha",
+                "p": "40 kg/ha",
+                "k": "25 kg/ha",
+                "micro": "Sulphur"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Aphids",
+                    "nameMr": "माजी",
+                    "symptoms": "फुलांवर किड्यांचा समूह",
+                    "prevention": "लेडीबर्ड बीटल",
+                    "solution": "डायमिथोएट",
+                    "image": "assets/images/pests/safflower_aphid.jpg"
+                }
+            ]
+        },
+        {
+            "id": "groundnut",
+            "nameEn": "Groundnut",
+            "nameMr": "भुईमूग",
+            "season": "kharif",
+            "duration": "110-140",
+            "soilType": "सुपीक वाळूमिश्रित / Sandy loam",
+            "image": "assets/images/crops/groundnut/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/groundnut/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/groundnut/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-75",
+                    "image": "assets/images/crops/groundnut/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "110-140",
+                    "image": "assets/images/crops/groundnut/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "25 kg/ha",
+                "p": "50 kg/ha",
+                "k": "50 kg/ha",
+                "micro": "Calcium, Sulphur"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Leaf Spot",
+                    "nameMr": "पानांवर डाग",
+                    "symptoms": "पानावर तपकिरी डाग",
+                    "prevention": "बीज उपचार",
+                    "solution": "मॅनकोझेब",
+                    "image": "assets/images/pests/leafspot.jpg"
+                }
+            ]
+        },
+        {
+            "id": "banana",
+            "nameEn": "Banana",
+            "nameMr": "केळी",
+            "season": "summer",
+            "duration": "300-365",
+            "soilType": "सुपीक चिकणमाती / Rich loam",
+            "image": "assets/images/crops/banana/main.jpg",
+            "stages": [
+                {
+                    "name": "vegetative",
+                    "days": "90-120",
+                    "image": "assets/images/crops/banana/stage1.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "180-210",
+                    "image": "assets/images/crops/banana/stage2.jpg"
+                },
+                {
+                    "name": "fruiting",
+                    "days": "240-300",
+                    "image": "assets/images/crops/banana/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "300-365",
+                    "image": "assets/images/crops/banana/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "200 kg/ha",
+                "p": "100 kg/ha",
+                "k": "300 kg/ha",
+                "micro": "Zinc, Boron"
+            },
+            "pests": [
+                {
+                    "stage": "vegetative",
+                    "name": "Panama Wilt",
+                    "nameMr": "पनामा कोमजणे",
+                    "symptoms": "पाने पिवळी पडणे",
+                    "prevention": "प्रतिरोधक जाती",
+                    "solution": "कार्बेंडाझिम",
+                    "image": "assets/images/pests/panama.jpg"
+                }
+            ]
+        },
+        {
+            "id": "moong",
+            "nameEn": "Green Gram (Moong)",
+            "nameMr": "मूग",
+            "season": "kharif",
+            "duration": "60-75",
+            "soilType": "वाळूमिश्रित / Sandy loam",
+            "image": "assets/images/crops/moong/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "5-7",
+                    "image": "assets/images/crops/moong/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "20-30",
+                    "image": "assets/images/crops/moong/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "35-45",
+                    "image": "assets/images/crops/moong/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "60-75",
+                    "image": "assets/images/crops/moong/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "20 kg/ha",
+                "p": "40 kg/ha",
+                "k": "20 kg/ha",
+                "micro": "Molybdenum"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Yellow Mosaic Virus",
+                    "nameMr": "पिवळा मोझॅइक",
+                    "symptoms": "पिवळे डाग",
+                    "prevention": "व्हायरस प्रतिरोधक जाती",
+                    "solution": "माशी नियंत्रण",
+                    "image": "assets/images/pests/mosaic.jpg"
+                }
+            ]
+        },
+        {
+            "id": "udid",
+            "nameEn": "Black Gram (Udid)",
+            "nameMr": "उडीद",
+            "season": "kharif",
+            "duration": "70-90",
+            "soilType": "चिकणमाती / Loamy soil",
+            "image": "assets/images/crops/udid/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "5-7",
+                    "image": "assets/images/crops/udid/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "25-35",
+                    "image": "assets/images/crops/udid/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "40-55",
+                    "image": "assets/images/crops/udid/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "70-90",
+                    "image": "assets/images/crops/udid/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "20 kg/ha",
+                "p": "40 kg/ha",
+                "k": "20 kg/ha",
+                "micro": "Molybdenum, Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Pod Borer",
+                    "nameMr": "शेंगा किडा",
+                    "symptoms": "शेंगा खराब",
+                    "prevention": "लाइट ट्रॅप",
+                    "solution": "क्विनालफॉस",
+                    "image": "assets/images/pests/udid_borer.jpg"
+                }
+            ]
+        },
+        {
+            "id": "cotton",
+            "nameEn": "Cotton",
+            "nameMr": "कापूस",
+            "season": "kharif",
+            "duration": "150-180",
+            "soilType": "काळी मातीत उत्तम / Black cotton soil",
+            "image": "assets/images/crops/cotton/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/cotton/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "60-75",
+                    "image": "assets/images/crops/cotton/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "90-110",
+                    "image": "assets/images/crops/cotton/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "150-180",
+                    "image": "assets/images/crops/cotton/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "120 kg/ha",
+                "p": "60 kg/ha",
+                "k": "60 kg/ha",
+                "micro": "Zinc, Boron"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Bollworm",
+                    "nameMr": "बोंड किडा",
+                    "symptoms": "बोंड खाल्ले जाणे",
+                    "prevention": "पिक फेरबदल",
+                    "solution": "बीटी कापूस",
+                    "image": "assets/images/pests/bollworm.jpg"
+                }
+            ]
+        },
+        {
+            "id": "tomato",
+            "nameEn": "Tomato",
+            "nameMr": "टोमॅटो",
+            "season": "rabi",
+            "duration": "90-120",
+            "soilType": "सुपीक चिकणमाती / Fertile loam",
+            "image": "assets/images/crops/tomato/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/tomato/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/tomato/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "50-65",
+                    "image": "assets/images/crops/tomato/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "90-120",
+                    "image": "assets/images/crops/tomato/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "150 kg/ha",
+                "p": "75 kg/ha",
+                "k": "100 kg/ha",
+                "micro": "Calcium, Boron"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Fruit Borer",
+                    "nameMr": "फळ किडा",
+                    "symptoms": "फळात छिद्र",
+                    "prevention": "साफसफाई",
+                    "solution": "स्पिनोसॅड",
+                    "image": "assets/images/pests/tomato_borer.jpg"
+                }
+            ]
+        },
+        {
+            "id": "chilli",
+            "nameEn": "Chilli",
+            "nameMr": "मिरची",
+            "season": "kharif",
+            "duration": "120-150",
+            "soilType": "चिकणमाती / Loamy soil",
+            "image": "assets/images/crops/chilli/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "10-15",
+                    "image": "assets/images/crops/chilli/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "40-50",
+                    "image": "assets/images/crops/chilli/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "70-90",
+                    "image": "assets/images/crops/chilli/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "120-150",
+                    "image": "assets/images/crops/chilli/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "100 kg/ha",
+                "p": "50 kg/ha",
+                "k": "50 kg/ha",
+                "micro": "Calcium"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Thrips",
+                    "nameMr": "थ्रिप्स",
+                    "symptoms": "पानांचा रंग बदलणे",
+                    "prevention": "पिवळा स्टिकी ट्रॅप",
+                    "solution": "फिप्रोनिल",
+                    "image": "assets/images/pests/chilli_thrips.jpg"
+                }
+            ]
+        },
+        {
+            "id": "brinjal",
+            "nameEn": "Brinjal (Eggplant)",
+            "nameMr": "वांगी",
+            "season": "kharif",
+            "duration": "100-130",
+            "soilType": "सुपीक मातीत / Fertile soil",
+            "image": "assets/images/crops/brinjal/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "8-12",
+                    "image": "assets/images/crops/brinjal/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "35-45",
+                    "image": "assets/images/crops/brinjal/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-75",
+                    "image": "assets/images/crops/brinjal/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "100-130",
+                    "image": "assets/images/crops/brinjal/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "100 kg/ha",
+                "p": "50 kg/ha",
+                "k": "50 kg/ha",
+                "micro": "Zinc, Boron"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Fruit & Shoot Borer",
+                    "nameMr": "फळ व कोंब किडा",
+                    "symptoms": "फळे खराब",
+                    "prevention": "फेरोमोन ट्रॅप",
+                    "solution": "बीटी वांगी",
+                    "image": "assets/images/pests/brinjal_borer.jpg"
+                }
+            ]
+        },
+        {
+            "id": "lemon",
+            "nameEn": "Lemon",
+            "nameMr": "लिंबू",
+            "season": "summer",
+            "duration": "150-180",
+            "soilType": "जलनिचरा / Well-drained",
+            "image": "assets/images/crops/lemon/main.jpg",
+            "stages": [
+                {
+                    "name": "vegetative",
+                    "days": "30-45",
+                    "image": "assets/images/crops/lemon/stage1.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-80",
+                    "image": "assets/images/crops/lemon/stage2.jpg"
+                },
+                {
+                    "name": "fruiting",
+                    "days": "100-130",
+                    "image": "assets/images/crops/lemon/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "150-180",
+                    "image": "assets/images/crops/lemon/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "200 kg/ha",
+                "p": "100 kg/ha",
+                "k": "150 kg/ha",
+                "micro": "Zinc, Iron"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Citrus Canker",
+                    "nameMr": "लिंबूवर्गीय रोग",
+                    "symptoms": "पानांवर डाग",
+                    "prevention": "स्वच्छता",
+                    "solution": "कॉपर ऑक्सिक्लोराइड",
+                    "image": "assets/images/pests/canker.jpg"
+                }
+            ]
+        },
+        {
+            "id": "custardapple",
+            "nameEn": "Custard Apple",
+            "nameMr": "सीताफळ",
+            "season": "summer",
+            "duration": "180-210",
+            "soilType": "वाळूमिश्रित / Sandy loam",
+            "image": "assets/images/crops/custardapple/main.jpg",
+            "stages": [
+                {
+                    "name": "vegetative",
+                    "days": "40-60",
+                    "image": "assets/images/crops/custardapple/stage1.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "90-110",
+                    "image": "assets/images/crops/custardapple/stage2.jpg"
+                },
+                {
+                    "name": "fruiting",
+                    "days": "140-170",
+                    "image": "assets/images/crops/custardapple/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "180-210",
+                    "image": "assets/images/crops/custardapple/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "150 kg/ha",
+                "p": "100 kg/ha",
+                "k": "100 kg/ha",
+                "micro": "Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Mealy Bug",
+                    "nameMr": "पांढरा किडा",
+                    "symptoms": "पांढरा चिकट पदार्थ",
+                    "prevention": "लेडीबर्ड बीटल",
+                    "solution": "थायोमेथोक्झाम",
+                    "image": "assets/images/pests/mealybug.jpg"
+                }
+            ]
+        },
+        {
+            "id": "ber",
+            "nameEn": "Ber (Indian Jujube)",
+            "nameMr": "बोर",
+            "season": "rabi",
+            "duration": "150-180",
+            "soilType": "वाळूमिश्रित / Sandy soil",
+            "image": "assets/images/crops/ber/main.jpg",
+            "stages": [
+                {
+                    "name": "vegetative",
+                    "days": "30-45",
+                    "image": "assets/images/crops/ber/stage1.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "70-90",
+                    "image": "assets/images/crops/ber/stage2.jpg"
+                },
+                {
+                    "name": "fruiting",
+                    "days": "120-150",
+                    "image": "assets/images/crops/ber/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "150-180",
+                    "image": "assets/images/crops/ber/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "100 kg/ha",
+                "p": "50 kg/ha",
+                "k": "75 kg/ha",
+                "micro": "Zinc"
+            },
+            "pests": [
+                {
+                    "stage": "fruiting",
+                    "name": "Fruit Fly",
+                    "nameMr": "फळ माशी",
+                    "symptoms": "फळे सडणे",
+                    "prevention": "मिथाइल युजेनॉल ट्रॅप",
+                    "solution": "बेट स्प्रे",
+                    "image": "assets/images/pests/fruitfly.jpg"
+                }
+            ]
+        },
+        {
+            "id": "sunflower",
+            "nameEn": "Sunflower",
+            "nameMr": "सूर्यफूल",
+            "season": "rabi",
+            "duration": "90-110",
+            "soilType": "सर्व प्रकारची / All types",
+            "image": "assets/images/crops/sunflower/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "7-10",
+                    "image": "assets/images/crops/sunflower/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "30-40",
+                    "image": "assets/images/crops/sunflower/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "60-75",
+                    "image": "assets/images/crops/sunflower/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "90-110",
+                    "image": "assets/images/crops/sunflower/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "60 kg/ha",
+                "p": "60 kg/ha",
+                "k": "40 kg/ha",
+                "micro": "Boron"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Head Rot",
+                    "nameMr": "फुलांचे कुजणे",
+                    "symptoms": "फुलांवर बुरशी",
+                    "prevention": "योग्य अंतर",
+                    "solution": "मॅनकोझेब",
+                    "image": "assets/images/pests/headrot.jpg"
+                }
+            ]
+        },
+        {
+            "id": "motki",
+            "nameEn": "Moth Bean",
+            "nameMr": "मटकी",
+            "season": "kharif",
+            "duration": "75-90",
+            "soilType": "वाळूमिश्रित / Sandy loam",
+            "image": "assets/images/crops/motki/main.jpg",
+            "stages": [
+                {
+                    "name": "germination",
+                    "days": "5-7",
+                    "image": "assets/images/crops/motki/stage1.jpg"
+                },
+                {
+                    "name": "vegetative",
+                    "days": "25-35",
+                    "image": "assets/images/crops/motki/stage2.jpg"
+                },
+                {
+                    "name": "flowering",
+                    "days": "45-60",
+                    "image": "assets/images/crops/motki/stage3.jpg"
+                },
+                {
+                    "name": "harvesting",
+                    "days": "75-90",
+                    "image": "assets/images/crops/motki/stage4.jpg"
+                }
+            ],
+            "nutrition": {
+                "n": "20 kg/ha",
+                "p": "40 kg/ha",
+                "k": "20 kg/ha",
+                "micro": "Phosphorus"
+            },
+            "pests": [
+                {
+                    "stage": "flowering",
+                    "name": "Pod Borer",
+                    "nameMr": "शेंगा किडा",
+                    "symptoms": "शेंगा खराब होणे",
+                    "prevention": "फेरोमोन ट्रॅप",
+                    "solution": "प्रोफेनोफॉस",
+                    "image": "assets/images/pests/motki_borer.jpg"
+                }
+            ]
+        }
+    ]
+}

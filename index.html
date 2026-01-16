@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="शिवराज कृषी सेवा केंद्र - शेतकऱ्यांसाठी खते, कीटकनाशके आणि कृषी माहिती">
+  <title data-lang="shopName">शिवराज कृषी सेवा केंद्र</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="shop-name">शिवराज कृषी सेवा केंद्र</div>
+      <button class="lang-toggle" onclick="switchLanguage()">
+        <i class="fas fa-language"></i> English
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Shop Image Slider -->
+    <div class="shop-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/shop/shop1.jpg" alt="Shop Front"
+            onerror="this.src='https://via.placeholder.com/420x250/2d7a3e/ffffff?text=Shop+Photo+1'">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/shop/shop2.jpg" alt="Shop Interior"
+            onerror="this.src='https://via.placeholder.com/420x250/2d7a3e/ffffff?text=Shop+Photo+2'">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/shop/shop3.jpg" alt="Products"
+            onerror="this.src='https://via.placeholder.com/420x250/2d7a3e/ffffff?text=Shop+Photo+3'">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <a href="crops.html" class="btn btn-primary">
+        <i class="fas fa-seedling"></i>
+        <span data-lang="viewCrops">पिके पहा</span>
+      </a>
+      <button class="btn btn-call" onclick="makeCall()">
+        <i class="fas fa-phone"></i>
+        <span data-lang="callNow">आता कॉल करा</span>
+      </button>
+      <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        <span data-lang="whatsapp">व्हाट्सॲप</span>
+      </button>
+    </div>
+
+    <!-- Shop Details Card -->
+    <div class="card">
+      <div class="card-title">
+        <i class="fas fa-store"></i>
+        <span data-lang="shopDetails">दुकान माहिती</span>
+      </div>
+
+      <!-- Tagline -->
+      <div style="background: #f0f9f4; padding: 0.75rem; border-radius: 8px; margin-bottom: 1rem; text-align: center;">
+        <p class="shop-tagline" style="color: #1a4d2e; font-weight: 600; margin: 0; font-size: 15px;">शेतकऱ्यांचा
+          विश्वास – दर्जेदार खते व औषधे</p>
+      </div>
+
+      <!-- Owner Info -->
+      <div class="detail-row">
+        <div class="detail-icon"><i class="fas fa-user"></i></div>
+        <div class="detail-content">
+          <h4>मालक / Owner</h4>
+          <p class="shop-owner">शिवरत्न प्रकाश कोरे</p>
+          <p class="shop-qualification" style="color: #2d7a3e; font-size: 14px; margin-top: 4px;">बी.एससी. कृषी</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="detail-content">
+          <h4 data-lang="address">पत्ता</h4>
+          <p class="shop-address" style="line-height: 1.6;">शॉप क्र. ९, सह्याद्री कृषी केंद्र<br>शेमराज शॉपिंग, केम
+            ग्रामपंचायतसमोर<br>केम, करमाळा, सोलापूर - ४१३२२३</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon"><i class="fas fa-phone"></i></div>
+        <div class="detail-content">
+          <h4 data-lang="phone">फोन</h4>
+          <p class="shop-phone">9420666197</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon"><i class="fas fa-clock"></i></div>
+        <div class="detail-content">
+          <h4 data-lang="workingHours">वेळ</h4>
+          <p class="shop-hours">सकाळी ७ ते रात्री १०</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon"><i class="fas fa-cogs"></i></div>
+        <div class="detail-content">
+          <h4 data-lang="ourServices">आमच्या सेवा</h4>
+          <p class="shop-services">खते, कीटकनाशके, तणनाशके, बियाणे</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="card">
+      <div class="card-title">
+        <i class="fas fa-map"></i>
+        <span>दुकानाचे स्थान / Shop Location</span>
+      </div>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+        <iframe src="https://www.google.com/maps?q=18.1756213,75.2757662&hl=mr&z=16&output=embed"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p style="margin-top: 0.75rem; text-align: center; color: #757575; font-size: 14px;">
+        Plus Code: 57GG+68R Kem, Maharashtra
+      </p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    // Initialize app
+    async function initApp() {
+      await initLanguage();
+      await populateShopInfo();
+      initSlider();
+    }
+
+    // Run on page load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+{
+    "crops": [
+        {
+            "id": "jowar",
+            "nameMr": "ज्वारी",
+            "nameEn": "Sorghum (Jowar)",
+            "basicInfo": {
+                "type": "धान्य पीक / Cereal Crop",
+                "season": "खरीप / Kharif",
+                "duration": "110-120 दिवस / 110-120 days",
+                "climate": "25-35°C, 500-700 मिमी पाऊस / 500-700mm rainfall",
+                "region": "सोलापूर, सातारा, पुणे, लातूर / Solapur, Satara, Pune, Latur"
+            },
+            "soil": {
+                "type": "काळी मातीत उत्तम, चिकणमाती / Black soil ideal, Loamy soil",
+                "ph": "6.0-8.5",
+                "preparation": "2-3 वेळा नांगरणी, समतल करणे, 8-10 टन शेणखत प्रति हेक्टर / 2-3 ploughings, leveling, 8-10 ton FYM per hectare"
+            },
+            "sowing": {
+                "seedRate": "8-10 किलो/हेक्टर (संकरित), 12-15 किलो/हेक्टर (देशी) / 8-10 kg/ha (hybrid), 12-15 kg/ha (local)",
+                "sowingTime": "जून दुसरा पंधरवडा ते जुलै पहिला आठवडा / Second fortnight of June to first week of July",
+                "method": "ओळींत पेरणी / Line sowing",
+                "spacing": "ओळीतील अंतर: 45 सेमी, रोपांमधील अंतर: 15 सेमी / Row spacing: 45cm, Plant spacing: 15cm"
+            },
+            "irrigation": {
+                "requirement": "मध्यम / Medium",
+                "criticalStages": "फुलणे, दाणे भरण्याची अवस्था / Flowering, Grain filling stage",
+                "interval": "15-20 दिवसांनी / Every 15-20 days",
+                "stressSymptoms": "पाने गुंडाळणे, वाढ थांबणे / Leaf rolling, Stunted growth"
+            },
+            "nutrition": {
+                "basalDose": {
+                    "n": "60-80 किलो नायट्रोजन/हेक्टर / 60-80 kg N/ha",
+                    "p": "40-50 किलो फॉस्फरस/हेक्टर / 40-50 kg P/ha",
+                    "k": "40 किलो पोटॅश/हेक्टर / 40 kg K/ha"
+                },
+                "topDressing": "पेरणीनंतर 30 आणि 60 व्या दिवशी / At 30 and 60 days after sowing",
+                "micronutrients": "जिंक सल्फेट 25 किलो/हेक्टर, लोखंड / Zinc Sulphate 25 kg/ha, Iron",
+                "organic": "8-10 टन शेणखत किंवा 5 टन कंपोस्ट / 8-10 ton FYM or 5 ton compost"
+            },
+            "growthStages": [
+                {
+                    "stage": "उगवण / Germination",
+                    "duration": "7-10 दिवस / 7-10 days",
+                    "description": "बीयाणे उगवून रोपटे येणे / Seed germination and seedling emergence",
+                    "care": "पुरेसा ओलावा, पक्षी व किडांपासून संरक्षण / Adequate moisture, Protection from birds and pests"
+                },
+                {
+                    "stage": "वाढीची अवस्था / Vegetative Growth",
+                    "duration": "30-40 दिवस / 30-40 days",
+                    "description": "पाने व खोड यांची वाढ, भक्कम मुळे / Leaf and stem development, Strong root system",
+                    "care": "तणाचे नियंत्रण, पहिली तुडीपोटखत / Weed control, First top dressing"
+                },
+                {
+                    "stage": "फुलणे व दाणे भरणे / Flowering & Grain Filling",
+                    "duration": "60-70 दिवस / 60-70 days",
+                    "description": "मांजरी येणे, फुले फुटणे, दाणे तयार होणे / Panicle emergence, Flowering, Grain formation",
+                    "care": "पुरेसे पाणी, दुसरी तुडीपोटखत, किड-रोग लक्ष / Adequate water, Second top dressing, Pest-disease monitoring"
+                },
+                {
+                    "stage": "कापणी / Maturity & Harvest",
+                    "duration": "110-120 दिवस / 110-120 days",
+                    "description": "दाणे कडक होणे, पिकण्याची पूर्णता / Grain hardening, Full maturity",
+                    "care": "योग्य वेळी कापणी, पक्षी संरक्षण / Timely harvest, Bird protection"
+                }
+            ],
+            "pestsDiseases": [
+                {
+                    "nameMr": "कोंब माशी",
+                    "nameEn": "Shoot Fly",
+                    "stage": "वाढीची अवस्था / Vegetative",
+                    "symptoms": "मध्यवर्ती पान सुकणे, मृत हृदय / Central leaf drying, Dead heart",
+                    "prevention": "बीयाणे उपचार, लवकर पेरणी / Seed treatment, Early sowing",
+                    "control": "कीटकनाशक फवारणी, प्रभावित रोप काढणे / Insecticide spray, Remove affected plants"
+                },
+                {
+                    "nameMr": "खोड पोखरणारा किडा",
+                    "nameEn": "Stem Borer",
+                    "stage": "फुलणे / Flowering",
+                    "symptoms": "खोड आतून पोखरणे, मृत हृदय / Stem tunneling, Dead heart",
+                    "prevention": "शेतातील स्वच्छता, फेरोमोन सापळे / Field sanitation, Pheromone traps",
+                    "control": "तुडीपोटखतासोबत कार्बोफ्युरान / Carbofuran with top dressing"
+                },
+                {
+                    "nameMr": "पावसाळी बुरशी",
+                    "nameEn": "Downy Mildew",
+                    "stage": "वाढीची अवस्था / Vegetative",
+                    "symptoms": "पानांवर पांढरे ठिपके, पिवळसर झणे / White spots on leaves, Yellowing",
+                    "prevention": "रोगप्रतिरोधक जाती, बीयाणे उपचार / Resistant varieties, Seed treatment",
+                    "control": "मॅन्कोझेब किंवा मेटालॅक्झिल फवारणी / Mancozeb or Metalaxyl spray"
+                }
+            ],
+            "harvesting": {
+                "maturityIndicators": "दाणे कडक झाले, मांजरी वाकली, पाने पिवळी / Grains hardened, Panicle bent, Leaves yellowing",
+                "method": "हाताने कापणी किंवा यांत्रिक / Manual or Mechanical harvesting",
+                "time": "110-120 दिवस पेरणीनंतर / 110-120 days after sowing",
+                "yield": "15-25 क्विंटल प्रति हेक्टर / 15-25 quintal per hectare"
+            },
+            "postHarvest": {
+                "drying": "12-14% पर्यंत ओलावा कमी करणे / Reduce moisture to 12-14%",
+                "storage": "स्वच्छ, कोरडे ठिकाण, किडांपासून संरक्षण / Clean, dry place, Pest protection",
+                "shelfLife": "योग्य साठवणीत 6-8 महिने / 6-8 months in proper storage",
+                "losses": "पक्षी नुकसान, किडांचा प्रादुर्भाव / Bird damage, Pest infestation"
+            }
+        },
+        {
+            "id": "bajra",
+            "nameMr": "बाजरी",
+            "nameEn": "Pearl Millet (Bajra)",
+            "basicInfo": {
+                "type": "धान्य पीक / Cereal Crop",
+                "season": "खरीप / Kharif",
+                "duration": "75-90 दिवस / 75-90 days",
+                "climate": "25-35°C, 400-600 मिमी पाऊस / 400-600mm rainfall",
+                "region": "सोलापूर, सातारा, पुणे / Solapur, Satara, Pune"
+            },
+            "soil": {
+                "type": "वाळूमिश्रित मातीत उत्तम / Sandy loam soil ideal",
+                "ph": "6.5-8.0",
+                "preparation": "2-3 वेळा नांगरणी, समतल करणे, 7-8 टन शेणखत / 2-3 ploughings, leveling, 7-8 ton FYM"
+            },
+            "sowing": {
+                "seedRate": "4-5 किलो/हेक्टर (संकरित), 5-6 किलो/हेक्टर (देशी) / 4-5 kg/ha (hybrid), 5-6 kg/ha (local)",
+                "sowingTime": "जून अखेर ते जुलै मध्य / End of June to mid-July",
+                "method": "ओळींत पेरणी किंवा बोरवेल / Line sowing or dibbling",
+                "spacing": "ओळीतील अंतर: 45 सेमी, रोपांमधील अंतर: 10-15 सेमी / Row: 45cm, Plant: 10-15cm"
+            },
+            "irrigation": {
+                "requirement": "कमी ते मध्यम / Low to Medium",
+                "criticalStages": "फुलणे, दाणे भरण्याची अवस्था / Flowering, Grain filling",
+                "interval": "20-25 दिवसांनी टपक्याची गरज / Need every 20-25 days",
+                "stressSymptoms": "पाने गुंडाळणे, वाढ मंदावणे / Leaf rolling, Slow growth"
+            },
+            "nutrition": {
+                "basalDose": {
+                    "n": "60-80 किलो नायट्रोजन/हेक्टर / 60-80 kg N/ha",
+                    "p": "40 किलो फॉस्फरस/हेक्टर / 40 kg P/ha",
+                    "k": "20 किलो पोटॅश/हेक्टर / 20 kg K/ha"
+                },
+                "topDressing": "पेरणीनंतर 25-30 दिवसांनी / At 25-30 days after sowing",
+                "micronutrients": "जिंक सल्फेट 25 किलो/हेक्टर / Zinc Sulphate 25 kg/ha",
+                "organic": "7-8 टन शेणखत किंवा कंपोस्ट / 7-8 ton FYM or compost"
+            },
+            "growthStages": [
+                {
+                    "stage": "उगवण / Germination",
+                    "duration": "5-7 दिवस / 5-7 days",
+                    "description": "बीयाणे उगवणे, रोपटे तयार होणे / Seed germination, Seedling formation",
+                    "care": "पुरेसा ओलावा, पक्षी संरक्षण / Adequate moisture, Bird protection"
+                },
+                {
+                    "stage": "वाढीची अवस्था / Vegetative Growth",
+                    "duration": "25-35 दिवस / 25-35 days",
+                    "description": "पाने व खोड यांची वाढ / Leaf and stem development",
+                    "care": "तणाचे नियंत्रण, तुडीपोटखत / Weed control, Top dressing"
+                },
+                {
+                    "stage": "फुलणे व दाणे भरणे / Flowering & Grain Filling",
+                    "duration": "45-55 दिवस / 45-55 days",
+                    "description": "मांजरी येणे, दाणे तयार होणे / Panicle emergence, Grain formation",
+                    "care": "पुरेसे पाणी, किड-रोग निरीक्षण / Adequate water, Pest monitoring"
+                },
+                {
+                    "stage": "कापणी / Harvest",
+                    "duration": "75-90 दिवस / 75-90 days",
+                    "description": "दाणे कडक होणे / Grain hardening",
+                    "care": "योग्य वेळी कापणी / Timely harvest"
+                }
+            ],
+            "pestsDiseases": [
+                {
+                    "nameMr": "पांढरा बुरशी",
+                    "nameEn": "Downy Mildew",
+                    "stage": "वाढीची अवस्था / Vegetative",
+                    "symptoms": "पाने पिवळी पडणे, पांढरा पावडर / Leaf yellowing, White powder",
+                    "prevention": "रोगप्रतिरोधक जाती, बीयाणे उपचार / Resistant varieties, Seed treatment",
+                    "control": "मेटालॅक्झिल + मॅन्कोझेब फवारणी / Metalaxyl + Mancozeb spray"
+                },
+                {
+                    "nameMr": "खोड पोखरणारा किडा",
+                    "nameEn": "Stem Borer",
+                    "stage": "वाढीची अवस्था / Vegetative",
+                    "symptoms": "खोड आतून पोखरणे, मृत हृदय / Stem tunneling, Dead heart",
+                    "prevention": "लवकर पेरणी, स्वच्छता / Early sowing, Sanitation",
+                    "control": "कार्बोफ्युरान फवारणी / Carbofuran spray"
+                }
+            ],
+            "harvesting": {
+                "maturityIndicators": "दाणे कडक, मांजरी झुकली, पाने वाळली / Grains hard, Panicle bent, Leaves dried",
+                "method": "हाताने किंवा यांत्रिक कापणी / Manual or Mechanical",
+                "time": "75-90 दिवस पेरणीनंतर / 75-90 days after sowing",
+                "yield": "12-18 क्विंटल प्रति हेक्टर / 12-18 quintal per hectare"
+            },
+            "postHarvest": {
+                "drying": "10-12% ओलावा / 10-12% moisture",
+                "storage": "कीडमुक्त कोठार / Pest-free godown",
+                "shelfLife": "6 महिने / 6 months",
+                "losses": "किडांचा प्रादुर्भाव / Pest infestation"
+            }
+        }
+    ]
+}

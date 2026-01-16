@@ -38,7 +38,7 @@ async function renderCropList() {
 
   container.innerHTML = crops.map(crop => `
     <a href="crop-details.html?crop=${crop.id}" class="crop-card">
-      <img src="${crop.image}" alt="${crop.nameMr}" onerror="this.src='https://via.placeholder.com/200x140/4caf50/ffffff?text=${encodeURIComponent(crop.nameMr)}'">
+      <img src="${crop.image}" alt="${crop.nameMr}" onerror="this.onerror=null; this.style.display='none';">
       <div class="crop-info">
         <div class="crop-name-mr">${lang === 'marathi' ? crop.nameMr : crop.nameEn}</div>
         <div class="crop-name-en">${lang === 'marathi' ? crop.nameEn : crop.nameMr}</div>
@@ -86,7 +86,7 @@ async function renderCropDetails() {
   // Render crop header
   container.innerHTML = `
     <div class="crop-header">
-      <img src="${crop.image}" alt="${cropName}" onerror="this.src='https://via.placeholder.com/300x200/4caf50/ffffff?text=${encodeURIComponent(cropName)}'">
+      <img src="${crop.image}" alt="${cropName}" onerror="this.onerror=null; this.style.display='none';">
       <h1>${cropName}</h1>
       <p>${lang === 'marathi' ? crop.nameEn : crop.nameMr}</p>
     </div>
@@ -127,7 +127,7 @@ async function renderCropDetails() {
       <div class="stage-list">
         ${crop.stages.map(stage => `
           <div class="stage-item">
-            <img src="${stage.image}" alt="${t(stage.name)}" onerror="this.src='https://via.placeholder.com/400x180/4caf50/ffffff?text=${encodeURIComponent(t(stage.name))}'">
+            <img src="${stage.image}" alt="${t(stage.name)}" onerror="this.onerror=null; this.style.display='none';">
             <div class="stage-title" data-lang="${stage.name}">${t(stage.name)}</div>
             <div class="stage-days">${stage.days} <span data-lang="days">${t('days')}</span></div>
           </div>
@@ -174,7 +174,7 @@ async function renderCropDetails() {
       <div class="pest-list">
         ${crop.pests.map(pest => `
           <div class="pest-card">
-            <img src="${pest.image}" alt="${pest.name}" onerror="this.src='https://via.placeholder.com/400x150/8b4513/ffffff?text=${encodeURIComponent(pest.name)}'">
+            <img src="${pest.image}" alt="${pest.name}" onerror="this.onerror=null; this.style.display='none';">
             <div class="pest-name">${lang === 'marathi' ? pest.nameMr : pest.name}</div>
             <div class="pest-info">
               <strong><span data-lang="stage">${t('stage')}</span>: <span data-lang="${pest.stage}">${t(pest.stage)}</span></strong>
@@ -193,15 +193,16 @@ async function renderCropDetails() {
 
   // Update page title
   document.title = `${cropName} - ${window.shopInfo?.SHOP_NAME || 'Agro Website'}`;
+
+  // ✅ Apply language ONCE at the end
+  applyLanguage();
 }
 
-// Re-render crop details when language changes
+// ✅ SAFE: Only apply language translation when language changes
+// DO NOT re-render the entire page to avoid infinite loop
 document.addEventListener('languageChanged', () => {
-  if (document.getElementById('crop-details-container')) {
-    renderCropDetails();
-  } else if (document.getElementById('crop-grid')) {
-    renderCropList();
-  }
+  // Translation is already handled by applyLanguage() in language.js
+  // No need to re-render crops here
 });
 
 // Export functions

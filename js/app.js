@@ -115,7 +115,7 @@ function showLoading(containerId) {
     const container = document.getElementById(containerId);
     if (container) {
         container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i> <span data-lang="loading">लोड होत आहे...</span></div>';
-        if (typeof applyLanguage === 'function') applyLanguage();
+        // ✅ NO applyLanguage() call - prevents infinite loop
     }
 }
 
@@ -129,7 +129,7 @@ function showError(containerId, message) {
         } else {
             container.innerHTML = '<div class="error"><i class="fas fa-exclamation-triangle"></i> <span data-lang="error">त्रुटी</span></div>';
         }
-        if (typeof applyLanguage === 'function') applyLanguage();
+        // ✅ NO applyLanguage() call - prevents infinite loop
     }
 }
 

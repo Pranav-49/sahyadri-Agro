@@ -33,6 +33,9 @@ function switchLanguage() {
   currentLanguage = currentLanguage === 'marathi' ? 'english' : 'marathi';
   localStorage.setItem('language', currentLanguage);
   applyLanguage();
+
+  // ✅ Dispatch event ONLY here when user explicitly switches language
+  document.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: currentLanguage } }));
 }
 
 // Apply language to all elements with data-lang attribute
@@ -63,8 +66,8 @@ function applyLanguage() {
       : '<i class="fas fa-language"></i> मराठी';
   }
 
-  // Dispatch custom event for other components
-  document.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: currentLanguage } }));
+  // 🚫 DO NOT dispatch any event here - prevents infinite loop
+  // Event is dispatched ONLY from switchLanguage()
 }
 
 // Get translated text programmatically

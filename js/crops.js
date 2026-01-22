@@ -175,6 +175,9 @@ async function renderCropDetails() {
         ${crop.pests.map(pest => `
           <div class="pest-card">
             <img src="${pest.image}" alt="${pest.name}" onerror="this.onerror=null; this.style.display='none';">
+            <img src="./assets/images/diseases/${crop.id}/${pest.name.toLowerCase().replace(/\s+/g, '_')}.jpg" 
+                 alt="${lang === 'marathi' ? pest.nameMr : pest.name}" 
+                 onerror="this.onerror=null; this.style.display='none';">
             <div class="pest-name">${lang === 'marathi' ? pest.nameMr : pest.name}</div>
             <div class="pest-info">
               <strong><span data-lang="stage">${t('stage')}</span>: <span data-lang="${pest.stage}">${t(pest.stage)}</span></strong>
@@ -184,27 +187,6 @@ async function renderCropDetails() {
               <p>${pest.prevention}</p>
               <strong data-lang="solution">${t('solution')}:</strong>
               <p>${pest.solution}</p>
-            </div>
-          </div>
-        `).join('')}
-      </div>
-    </div>
-    
-    <!-- Disease Identification Images -->
-    <div class="card">
-      <div class="card-title">
-        <i class="fas fa-image"></i>
-        <span data-lang="diseaseIdentification">${lang === 'marathi' ? 'रोग ओळख' : 'Disease Identification'}</span>
-      </div>
-      <div class="disease-gallery">
-        ${crop.pests.map(pest => `
-          <div class="disease-image-card">
-            <img src="./assets/images/diseases/${crop.id}/${pest.name.toLowerCase().replace(/\s+/g, '_')}.jpg" 
-                 alt="${lang === 'marathi' ? pest.nameMr : pest.name}" 
-                 onerror="this.parentElement.style.display='none';">
-            <div class="disease-image-caption">
-              <div class="disease-name">${lang === 'marathi' ? pest.nameMr : pest.name}</div>
-              <div class="disease-stage"><span data-lang="${pest.stage}">${t(pest.stage)}</span></div>
             </div>
           </div>
         `).join('')}

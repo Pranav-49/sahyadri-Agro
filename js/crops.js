@@ -199,7 +199,7 @@ async function renderCropDetails() {
       <div class="disease-gallery">
         ${crop.pests.map(pest => `
           <div class="disease-image-card">
-            <img src="assets/images/diseases/${crop.id}/${pest.name.toLowerCase().replace(/\s+/g, '_')}.jpg" 
+            <img src="./assets/images/diseases/${crop.id}/${pest.name.toLowerCase().replace(/\s+/g, '_')}.jpg" 
                  alt="${lang === 'marathi' ? pest.nameMr : pest.name}" 
                  onerror="this.parentElement.style.display='none';">
             <div class="disease-image-caption">

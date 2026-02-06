@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="सह्याद्री कृषी सेवा केंद्र - खते, बियाणे, कीटकनाशके आणि अधिक">
+    <title data-lang="shopTitle">सह्याद्री कृषी सेवा केंद्र</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <img src="./assets/images/logo.png" alt="Sahyadri Agro Logo" class="header-logo">
+                <div class="shop-name">सह्याद्री कृषी सेवा केंद्र</div>
+            </div>
+            <button class="lang-toggle" onclick="switchLanguage()">
+                <i class="fas fa-language"></i> English
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- New Tagline Section -->
+        <div class="tagline-section">
+            <h1 class="tagline-primary">प्रत्येक शेतकऱ्याच्या शिवारात,<br>सह्याद्रीचा विश्वास...!!</h1>
+            <p class="tagline-secondary">Trust of Sahyadri in every farmer's field…!!</p>
+        </div>
+
+        <!-- NEW: Explore Categories Button -->
+        <div class="cta-section">
+            <a href="categories.html" class="btn-primary">
+                <i class="fas fa-th-large"></i>
+                <span data-lang="browseCategories">श्रेणी पहा</span>
+            </a>
+        </div>
+
+        <!-- Shop Image Slider -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/shop/shop1.jpg" alt="Shop Image 1" class="shop-image"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%232d7a3e%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22white%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2224%22%3ESahyadri Agro%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/shop/shop2.jpg" alt="Shop Image 2" class="shop-image"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%232d7a3e%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22white%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2224%22%3EKrushi Seva Kendra%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Shop Information -->
+        <div class="shop-info-card">
+            <h2 data-lang="aboutUs">आमच्याबद्दल</h2>
+            
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <div>
+                    <div class="info-label" data-lang="owner">मालक</div>
+                    <div class="shop-owner">शिवरत्न प्रकाश कोरे</div>
+                    <div class="shop-qualification">(B.Sc. Agriculture)</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <div class="info-label" data-lang="contact">संपर्क</div>
+                    <div class="shop-phone">9420666197</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <div class="info-label" data-lang="workingHours">कामाचे तास</div>
+                    <div class="shop-hours">सकाळी 7 ते रात्री 10</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <div class="info-label" data-lang="address">पत्ता</div>
+                    <div class="shop-address">दुकान क्रमांक 9, सह्याद्री कृषी केंद्र,<br>शेमराज शॉपिंग, केम, करमाळा, सोलापूर - 413223</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-shopping-bag"></i>
+                <div>
+                    <div class="info-label" data-lang="services">सेवा</div>
+                    <div class="shop-services">खते, बियाणे, कीटकनाशके, तणनाशक</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <h3 data-lang="location">आमचे स्थान</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.123!2d75.1234!3d18.4567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI3JzI0LjEiTiA3NcKwMDcnMjQuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="action-btn call-btn" onclick="makeCall()">
+                <i class="fas fa-phone-alt"></i>
+                <span data-lang="call">कॉल करा</span>
+            </button>
+            <button class="action-btn whatsapp-btn" onclick="openWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                <span data-lang="whatsapp">WhatsApp</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        // Initialize app
+        async function initApp() {
+            await initLanguage();
+            await populateShopInfo();
+            initSlider();
+        }
+
+        // Run on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+            initApp();
+        }
+    </script>
+</body>
+
+</html>

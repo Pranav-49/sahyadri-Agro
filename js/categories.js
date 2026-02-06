@@ -108,10 +108,16 @@ async function renderCategoryItems() {
 
     let html = '';
 
+    // Calculate starting ID based on category
+    let startId = 1;
+    if (categoryId === 'crops') startId = 17;
+    else if (categoryId === 'flowers') startId = 32;
+    else if (categoryId === 'fruits') startId = 43;
+
     items.forEach((item, index) => {
         const name = lang === 'marathi' ? item.nameMr : item.nameEn;
         const imagePath = item.image || `./assets/images/items/${item.id}.jpg`;
-        const itemDetailId = (data.categories.findIndex(c => c.id === categoryId) * 20) + index + 1;
+        const itemDetailId = startId + index;
 
         html += `
             <a href="item-details.html?id=${itemDetailId}" class="item-card">

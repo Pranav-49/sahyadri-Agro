@@ -38,7 +38,7 @@ async function renderCategories() {
     data.categories.forEach(category => {
         const name = lang === 'marathi' ? category.nameMr : category.nameEn;
         const categoryUrl = `explore.html?category=${category.id}`;
-        
+
         html += `
             <a href="${categoryUrl}" class="category-card" data-category="${category.id}">
                 <div class="category-icon">${category.icon}</div>
@@ -84,9 +84,9 @@ async function renderCategoryItems() {
     document.getElementById('page-title').textContent = `${categoryName} - सह्याद्री कृषी सेवा केंद्र`;
     document.getElementById('category-title').textContent = categoryName;
     document.getElementById('category-heading').textContent = categoryName;
-    
-    const descText = lang === 'marathi' 
-        ? `या श्रेणीतील सर्व ${category.nameMr}` 
+
+    const descText = lang === 'marathi'
+        ? `या श्रेणीतील सर्व ${category.nameMr}`
         : `All ${category.nameEn} in this category`;
     document.getElementById('category-description').textContent = descText;
 
@@ -108,18 +108,19 @@ async function renderCategoryItems() {
 
     let html = '';
 
-    items.forEach(item => {
+    items.forEach((item, index) => {
         const name = lang === 'marathi' ? item.nameMr : item.nameEn;
         const imagePath = item.image || `./assets/images/items/${item.id}.jpg`;
+        const itemDetailId = (data.categories.findIndex(c => c.id === categoryId) * 20) + index + 1;
 
         html += `
-            <div class="item-card">
+            <a href="item-details.html?id=${itemDetailId}" class="item-card">
                 <div class="item-image">
                     <img src="${imagePath}" alt="${name}" 
                          onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%232d7a3e%22 width=%22200%22 height=%22200%22/%3E%3Ctext fill=%22white%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2216%22%3E${encodeURIComponent(name)}%3C/text%3E%3C/svg%3E';">
                 </div>
                 <div class="item-name">${name}</div>
-            </div>
+            </a>
         `;
     });
 

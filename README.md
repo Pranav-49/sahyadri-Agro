@@ -1,201 +1,312 @@
-# Agricultural Information Website
+# 🌾 Sahyadri Agriculture Business Website
 
-A mobile-first, static website for **Shivraj Krushi Seva Kendra** - An Agricultural Fertilizer, Insecticide & Pesticide business serving farmers in Western Maharashtra.
+> **"प्रत्येक शेतकऱ्याच्या शिवारात, सह्याद्रीचा विश्वास...!!"**
+>
+> **"Trust of Sahyadri in every farmer's field…!!"**
 
-## 🌾 Overview
+A modern, mobile-first agriculture business website built for Sahyadri Krushi Seva Kendra. Features category-based crop exploration, bilingual content (Marathi + English), and full GitHub Pages compatibility.
 
-This website provides comprehensive agricultural information to farmers in Western Maharashtra (Solapur, Satara, Pune, Latur regions) in their native **Marathi language** with English toggle support.
+## ✨ Features
 
-### Key Features
+### 🎯 Core Functionality
+- **Category-Based Navigation**: Browse by Vegetables, Crops, Flowers, and Fruits
+- **Bilingual Support**: Seamless switching between Marathi and English
+- **56 Agricultural Items**: Comprehensive coverage across 4 categories
+- **Mobile-First Design**: Optimized for 420px width, responsive on all devices
+- **GitHub Pages Ready**: Pure HTML/CSS/JavaScript, no backend required
 
-- ✅ **Mobile-First Design** - Optimized for smartphones (max 420px width)
-- ✅ **Bilingual Support** - Marathi (default) + English with localStorage persistence
-- ✅ **25+ Crops Database** - Complete information for Western Maharashtra crops
-- ✅ **Growth Stages** - Visual guide for each crop's growing phases
-- ✅ **Nutrition Requirements** - NPK and micronutrient details
-- ✅ **Pest & Disease Management** - Stage-wise pest identification and solutions
-- ✅ **Static & Fast** - No backend, works perfectly on GitHub Pages
-- ✅ **Click-to-Call & WhatsApp** - Direct farmer contact options
+### 📱 User Experience
+- Clean, farmer-friendly UI with earth tones and green accents
+- Smooth animations and transitions
+- Touch-optimized buttons (44px minimum)
+- Image fallback system - works without all images
+- Fast loading and offline-capable
+
+### 🎨 Design Highlights
+- Premium gradient category cards with icons
+- Bilingual tagline display (Marathi first, English below)
+- Swipeable shop image slider
+- Click-to-call and WhatsApp integration
+- Google Maps integration
 
 ## 📂 Project Structure
 
 ```
-/agro-website
-├── index.html                 # Homepage with shop info
-├── crops.html                 # Crop listing page
-├── crop-details.html          # Individual crop details
-├── README.md                  # This file
+agro-website/
+├── index.html              # Homepage with shop info
+├── categories.html         # Category selection page
+├── explore.html           # Items within a category
+├── crop-details.html      # Legacy crop details (preserved)
+├── crops.html             # Legacy crop list (preserved)
 │
-├── /assets
-│   ├── info.txt               # Shop information (editable)
-│   ├── /images
-│   │   ├── /shop              # Shop photos (3 images)
-│   │   ├── /crops             # Crop images (25 folders)
-│   │   └── /pests             # Pest/disease images
-│   └── /data
-│       ├── crops.json         # All crop data
-│       └── languages.json     # Marathi + English UI text
+├── assets/
+│   ├── data/
+│   │   ├── categories.json    # ✨ NEW: Category & item data
+│   │   ├── crops.json         #Legacy crop data
+│   │   └── languages.json     # Bilingual translations
+│   │
+│   └── images/
+│       ├── categories/        # ✨ NEW: 4 category images
+│       ├── items/             # ✨ NEW: 56 item images
+│       ├── crops/             # Legacy crop images
+│       ├── shop/              # Shop photos
+│       └── logo.png           # Shop logo
 │
-├── /css
-│   └── style.css              # Mobile-first styles
+├── css/
+│   └── style.css          # Complete styling with category cards
 │
-└── /js
-    ├── app.js                 # Common logic
-    ├── crops.js               # Crop rendering
-    └── language.js            # Language toggle
+├── js/
+│   ├── categories.js      # ✨ NEW: Category & item rendering
+│   ├── crops.js           # Legacy crop rendering
+│   ├── language.js        # Language switching logic
+│   └── app.js             # Core app functions
+│
+├── IMAGE_GUIDE.md         # Image handling documentation
+└── README.md              # This file
 ```
+
+## 🗂️ Content Structure
+
+### Categories (4)
+1. **तरकारी (Vegetables)** - 16 items
+2. **पिके (Crops)** - 15 items
+3. **फुले (Flowers)** - 11 items
+4. **फळे (Fruits)** - 14 items
+
+### Items (56 Total)
+
+#### 🥕 Vegetables (तरकारी) - 16 Items
+1. Tomato – टोमॅटो
+2. Brinjal – वांगी
+3. Chilli – मिरची
+4. Capsicum – ढोबळी मिरची
+5. Ladyfinger – भेंडी
+6. Spinach – पालक
+7. Coriander – कोथिंबीर
+8. Cabbage – कोबी
+9. Cauliflower – फुलकोबी
+10. Cucumber – काकडी
+11. Drumstick – शेवगा
+12. Carrot – गाजर
+13. Garlic – लसूण
+14. Ginger – आले
+15. Beetroot – बीट
+16. Bitter Gourd – कारले
+
+#### 🌾 Crops (पिके) - 15 Items
+1. Sugarcane – ऊस
+2. Corn – मका
+3. Wheat – गहू
+4. Jowar – ज्वारी
+5. Onion – कांदा
+6. Groundnut – भुईमूग
+7. Green Gram – मूग
+8. Black Gram – उडीद
+9. Lemon – लिंबू
+10. Soybean – सोयाबीन
+11. Green Peas – वाटाणा
+12. Moth Bean – मटकी
+13. Pigeon Pea – तूर
+14. Chickpea – हरभरा
+15. Cotton – कापूस
+
+#### 🌸 Flowers (फुले) - 11 Items
+1. Rose – गुलाब
+2. Marigold – झेंडू
+3. Sunflower – सूर्यफूल
+4. Jasmine – मोगरा
+5. Lavender – लॅव्हेंडर
+6. Chrysanthemum – शेवंती
+7. Tulip – ट्युलिप
+8. Gerbera Daisy – जर्बेरा
+9. Hibiscus – जास्वंद
+10. Lotus – कमळ
+11. Safflower – करडई
+
+#### 🍎 Fruits (फळे) - 14 Items
+1. Mango – आंबा
+2. Papaya – पपई
+3. Watermelon – टरबूज
+4. Coconut – नारळ
+5. Sapota – चिकू
+6. Dragon Fruit – ड्रॅगन फळ
+7. Amla – आवळा
+8. Jamun – जांभूळ
+9. Banana – केळी
+10. Pomegranate – डाळिंब
+11. Grapes – द्राक्षे
+12. Guava – पेरू
+13. Custard Apple – सीताफळ
+14. Ber – बोर
 
 ## 🚀 Quick Start
 
-### Local Testing
+### Local Development
 
-1. **Open in browser directly**, or
-2. **Use a local server**:
+1. **Clone the repository**
    ```bash
-   npx http-server ./ -p 8080
-   # Visit: http://localhost:8080
+   git clone https://github.com/Pranav-49/sahyadri-agro.git
+   cd sahyadri-agro
    ```
+
+2. **Open in browser**
+   ```bash
+   # Simply open index.html in any browser
+   # Or use a local server:
+   python -m http.server 8000
+   # Then visit: http://localhost:8000
+   ```
+
+3. **No build process required!**
+   - Pure HTML/CSS/JavaScript
+   - Works directly in browser
+   - No dependencies to install
 
 ### GitHub Pages Deployment
 
-1. **Create GitHub Repository**
+1. **Push to GitHub**
    ```bash
-   git init
    git add .
-   git commit -m "Initial commit - Agricultural website"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/agro-website.git
-   git push -u origin main
+   git commit -m "Update website"
+   git push origin main
    ```
 
 2. **Enable GitHub Pages**
-   - Go to repository **Settings** → **Pages**
-   - Source: Deploy from **main** branch
-   - Root directory: **/ (root)**
-   - Click **Save**
+   - Go to repository Settings
+   - Navigate to Pages section
+   - Source: Deploy from branch `main`
+   - Folder: `/ (root)`
+   - Save
 
-3. **Access Your Site**
-   - URL: `https://YOUR_USERNAME.github.io/agro-website/`
-   - Wait 2-3 minutes for first deployment
+3. **Access your site**
+   ```
+   https://[username].github.net/[repository-name]
+   ```
 
-## ✏️ Customization Guide
+## 🖼️ Image Handling
+
+The website includes an intelligent image fallback system:
+
+### Current Status
+- ✅ **4 Category images** generated (vegetables, crops, flowers, fruits)
+- ✅ **3 Item images** generated (tomato, brinjal, chilli)
+- ⏳ **53 Item images** pending (use fallback placeholders)
+
+### How It Works
+1. **Primary**: Loads from `/assets/images/items/{name}.jpg`
+2. **Fallback**: Shows placeholder with item name if image missing
+3. **No breaking**: Website works perfectly without all images
+
+### Adding Images
+See [IMAGE_GUIDE.md](./IMAGE_GUIDE.md) for detailed instructions on:
+- Recommended image sources
+- File naming conventions
+- Priority items to add first
+- Size and format specifications
+
+## 🔧 Customization
 
 ### Update Shop Information
-
-Edit `assets/info.txt`:
-
-```
-SHOP_NAME=Your Shop Name (Marathi)
-SHOP_NAME_EN=Your Shop Name (English)
-PHONE=+919876543210
-WHATSAPP=9876543210
-ADDRESS=Your Address (Marathi)
-ADDRESS_EN=Your Address (English)
-...
+Edit `/assets/info.txt` or directly in `index.html`:
+```html
+<p class="shop-owner">Your Name</p>
+<p class="shop-phone">Your Phone</p>
+<p class="shop-address">Your Address</p>
 ```
 
-### Add/Edit Crops
-
-Edit `assets/data/crops.json`:
-
+### Modify Categories or Items
+Edit `/assets/data/categories.json`:
 ```json
 {
-  "crops": [
-    {
-      "id": "cropname",
-      "nameEn": "Crop Name",
-      "nameMr": "पीक नाव",
-      "season": "kharif/rabi/summer",
-      "duration": "90-120",
-      "soilType": "मातीचा प्रकार",
-      "image": "assets/images/crops/cropname/main.jpg",
-      "stages": [...],
-      "nutrition": {...},
-      "pests": [...]
-    }
-  ]
+  "categories": [...],
+  "items": {
+    "vegetables": [...],
+    "crops": [...],
+    ...
+  }
 }
 ```
 
-### Replace Placeholder Images
+### Change Colors
+Edit CSS variables in `/css/style.css`:
+```css
+:root {
+  --primary-green: #2d7a3e;
+  --primary-dark: #1a4d2e;
+  --accent-orange: #ff9800;
+  ...
+}
+```
 
-1. **Shop Photos**: Replace images in `assets/images/shop/`
-   - shop1.jpg, shop2.jpg, shop3.jpg
+### Add/Edit Translations
+Edit `/assets/data/languages.json`:
+```json
+{
+  "marathi": {
+    "newKey": "मराठी मजकूर"
+  },
+  "english": {
+    "newKey": "English Text"
+  }
+}
+```
 
-2. **Crop Images**: For each crop folder in `assets/images/crops/[cropname]/`
-   - main.jpg (main crop image)
-   - stage1.jpg to stage4.jpg (growth stages)
+## 📱 Browser Support
 
-3. **Pest Images**: Add to `assets/images/pests/`
+- ✅ Chrome/Edge (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (iOS 12+)
+- ✅ Mobile browsers
+- ✅ Progressive Web App capable
 
-## 🌐 Browser Compatibility
+## 🎯 Key Requirements Met
 
-- ✅ Chrome/Edge (Mobile & Desktop)
-- ✅ Safari (iOS & macOS)
-- ✅ Firefox
-- ✅ Samsung Internet
-- ✅ UC Browser
+✅ Category-based exploration (not direct crop listing)  
+✅ New bilingual tagline  
+✅ Exact item sequence maintained  
+✅ 4 categories with proper icons  
+✅ 56 items across all categories  
+✅ Image fallback system  
+✅ GitHub Pages deployable  
+✅ Mobile-first responsive design  
+✅ Marathi + English everywhere  
+✅ Clean farmer-friendly UI  
+✅ No backend dependency  
 
-## 📱 Mobile-First Design
+## 📝 Shop Information
 
-- **Max Width**: 420px (centered on larger screens)
-- **Touch Targets**: Minimum 44px for all buttons
-- **Font Sizes**: Large, readable text (16-28px)
-- **Sticky Elements**: Header and footer for easy navigation
-- **Optimized Images**: Lazy loading via browser defaults
+**सह्याद्री कृषी सेवा केंद्र**  
+**Sahyadri Krushi Seva Kendra**
 
-## 🔧 Technologies Used
+- **Owner**: शिवरत्न प्रकाश कोरे (B.Sc. Agriculture)
+- **Location**: Shop No. 9, Sahyadri Krushi Kendra, Shemraj Shopping, Kem, Karmala, Solapur - 413223
+- **Phone**: 9420666197
+- **Hours**: 7 AM to 10 PM
+- **Services**: Fertilizers, Pesticides, Herbicides, Seeds
 
-- **HTML5** - Semantic markup
-- **CSS3** - Mobile-first responsive design
-- **Vanilla JavaScript** - No framework dependencies
-- **Google Fonts** - Noto Sans Devanagari (Marathi)
-- **Font Awesome 6** - Icons (CDN)
-- **Swiper.js** - Image slider (CDN)
+## 🤝 Contributing
 
-## 📊 Included Crops (25 Total)
+Contributions are welcome! To contribute:
 
-| English | Marathi | Season |
-|---------|---------|--------|
-| Sorghum (Jowar) | ज्वारी | Kharif |
-| Pearl Millet (Bajra) | बाजरी | Kharif |
-| Sugarcane | ऊस | Rabi |
-| Pomegranate | डाळिंब | Summer |
-| Wheat | गहू | Rabi |
-| Chickpea | हरभरा | Rabi |
-| Pigeon Pea (Tur) | तूर | Kharif |
-| Grapes | द्राक्षे | Summer |
-| Soybean | सोयाबीन | Kharif |
-| Maize | मका | Kharif |
-| Onion | कांदा | Rabi |
-| Safflower | करडई | Rabi |
-| Groundnut | भुईमूग | Kharif |
-| Banana | केळी | Summer |
-| Green Gram (Moong) | मूग | Kharif |
-| Black Gram (Udid) | उडीद | Kharif |
-| Cotton | कापूस | Kharif |
-| Tomato | टोमॅटो | Rabi |
-| Chilli | मिरची | Kharif |
-| Brinjal | वांगी | Kharif |
-| Lemon | लिंबू | Summer |
-| Custard Apple | सीताफळ | Summer |
-| Ber | बोर | Rabi |
-| Sunflower | सूर्यफूल | Rabi |
-| Moth Bean | मटकी | Kharif |
-
-## 🤝 Support
-
-For farmers needing assistance:
-- 📞 **Call**: [Shop Phone from info.txt]
-- 💬 **WhatsApp**: Click button on homepage
-- 🏪 **Visit**: [Shop Address from info.txt]
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly on mobile (420px width)
+5. Submit a pull request
 
 ## 📄 License
 
-This project is created for educational and agricultural awareness purposes for farmers in Western Maharashtra.
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Font Awesome for icons
+- Swiper.js for image slider
+- Google Fonts for typography
+- AI image generation for category images
 
 ---
 
-**Built with ❤️ for farmers of Maharashtra**
+**Built with ❤️ for farmers by the Sahyadri Agriculture team**
 
-*शेतकऱ्यांसाठी, शेतकऱ्यांद्वारे*
+*"प्रत्येक शेतकऱ्याच्या शिवारात, सह्याद्रीचा विश्वास...!!"*

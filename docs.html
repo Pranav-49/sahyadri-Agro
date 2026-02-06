@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Project Documentation - Sahyadri Agriculture Website">
+    <title>Documentation - सह्याद्री कृषी केंद्र</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Additional styles specific to docs page */
+        .docs-hero {
+            background: linear-gradient(135deg, #1a4d2e 0%, #2d7a3e 100%);
+            color: white;
+            padding: 2rem 1rem;
+            margin: -1rem -1rem 1.5rem;
+            text-align: center;
+            border-radius: 0 0 16px 16px;
+        }
+
+        .docs-hero img {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto 1rem;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline-primary {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.6;
+            margin: 0 0 0.5rem 0;
+            color: white;
+        }
+
+        .tagline-secondary {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0;
+            opacity: 0.95;
+            color: #e8f5e9;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title i {
+            color: var(--primary-green);
+            font-size: 28px;
+        }
+
+        .doc-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .doc-card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .doc-card-title i {
+            color: var(--primary-green);
+            font-size: 20px;
+        }
+
+        .doc-card-desc {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist li {
+            background: var(--bg-white);
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: var(--radius-md);
+            border-left: 3px solid #4caf50;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 1px 4px var(--shadow);
+        }
+
+        .checklist i {
+            color: #4caf50;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-card {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-radius: var(--radius-lg);
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            border: 2px solid #c8e6c9;
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -12px;
+            left: 12px;
+            background: var(--primary-green);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(45, 122, 62, 0.4);
+        }
+
+        .step-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 0.5rem 0 0.5rem 0;
+        }
+
+        .step-desc {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border: 2px solid #ffb74d;
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            color: #e65100;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 0.75rem 0;
+        }
+
+        .highlight-box p {
+            color: #424242;
+            margin: 0.5rem 0;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .highlight-box .cta {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-top: 1rem;
+        }
+
+        .back-to-home {
+            background: var(--primary-green);
+            color: white;
+            padding: 1rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(45, 122, 62, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(45, 122, 62, 0.4);
+        }
+
+        .back-to-home i {
+            margin-right: 0.5rem;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-green), transparent);
+            margin: 2rem 0;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <img src="./assets/images/logo.png" alt="Sahyadri Agro Logo" class="header-logo">
+                <div class="shop-name">Documentation</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section with Tagline -->
+        <div class="docs-hero">
+            <img src="./assets/images/docs-hero.jpg" alt="Farmer using mobile website"
+                onerror="this.style.display='none'">
+            <p class="tagline-primary">
+                प्रत्येक शेतकऱ्याच्या शिवारात, सह्याद्रीचा विश्वास...!!
+            </p>
+            <p class="tagline-secondary">
+                Trust of Sahyadri in every farmer's field…!!
+            </p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="card">
+            <h2 style="color: var(--primary-dark); margin-bottom: 1rem;">
+                📚 Project Handbook
+            </h2>
+            <p style="color: var(--text-gray); line-height: 1.6; margin: 0;">
+                Welcome to the complete documentation for the Sahyadri Agriculture Business Website. This page explains
+                what
+                was built, what documentation exists, and how to use and deploy your new category-based agriculture
+                platform.
+            </p>
+        </div>
+
+        <hr class="divider">
+
+        <!-- SECTION 1: Documentation Files -->
+        <h2 class="section-title">
+            <i class="fas fa-book"></i>
+            📖 Documentation Files
+        </h2>
+
+        <div class="doc-card">
+            <div class="doc-card-title">
+                <i class="fas fa-file-alt"></i>
+                README.md
+            </div>
+            <p class="doc-card-desc">
+                Complete project documentation covering features, structure, content, deployment, customization, and
+                technical
+                details. Your main reference guide.
+            </p>
+        </div>
+
+        <div class="doc-card">
+            <div class="doc-card-title">
+                <i class="fas fa-rocket"></i>
+                QUICK_START.md
+            </div>
+            <p class="doc-card-desc">
+                Quick setup and deployment guide with step-by-step instructions for testing locally, deploying to GitHub
+                Pages,
+                and verifying everything works.
+            </p>
+        </div>
+
+        <div class="doc-card">
+            <div class="doc-card-title">
+                <i class="fas fa-images"></i>
+                IMAGE_GUIDE.md
+            </div>
+            <p class="doc-card-desc">
+                Image handling documentation explaining the fallback system, where to find images, file naming
+                conventions, and
+                priority items to add first.
+            </p>
+        </div>
+
+        <div class="doc-card">
+            <div class="doc-card-title">
+                <i class="fas fa-clipboard-check"></i>
+                IMPLEMENTATION_SUMMARY.md
+            </div>
+            <p class="doc-card-desc">
+                Detailed summary of what was built, files created/modified, requirements met, and project statistics.
+                Perfect
+                for understanding the implementation.
+            </p>
+        </div>
+
+        <hr class="divider">
+
+        <!-- SECTION 2: What's Working -->
+        <h2 class="section-title">
+            <i class="fas fa-check-circle"></i>
+            🎯 What's Working
+        </h2>
+
+        <ul class="checklist">
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Homepage with new bilingual tagline</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Category selection page (4 beautiful cards)</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Items exploration within categories</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Bilingual support (Marathi ↔ English)</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Mobile-responsive design (420px optimized)</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Intelligent image fallback system</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>All 56 items in correct sequence</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>GitHub Pages compatible (no backend)</span>
+            </li>
+            <li>
+                <i class="fas fa-check-circle"></i>
+                <span>No build process needed - works directly</span>
+            </li>
+        </ul>
+
+        <hr class="divider">
+
+        <!-- SECTION 3: Next Steps -->
+        <h2 class="section-title">
+            <i class="fas fa-tasks"></i>
+            💡 Next Steps (Optional)
+        </h2>
+
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-title">Test the Website</div>
+            <p class="step-desc">
+                → Double-click <code>index.html</code> to open in your browser and explore the category-based navigation
+                system. Click "श्रेणी पहा" to see all categories.
+            </p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-title">Add More Real Images</div>
+            <p class="step-desc">
+                → See <code>IMAGE_GUIDE.md</code> for instructions on downloading or generating images for the remaining
+                53
+                items. The website works perfectly with placeholders.
+            </p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-title">Deploy to GitHub Pages</div>
+            <p class="step-desc">
+                → See <code>QUICK_START.md</code> for step-by-step deployment instructions. Your site will be live at
+                https://[username].github.io/[repo-name]
+            </p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-title">Customize Your Website</div>
+            <p class="step-desc">
+                → Change colors in <code>css/style.css</code>, update shop info in <code>index.html</code>, modify items
+                in
+                <code>assets/data/categories.json</code>, or edit translations.
+            </p>
+        </div>
+
+        <hr class="divider">
+
+        <!-- SECTION 4: Website Status -->
+        <h2 class="section-title">
+            <i class="fas fa-rocket"></i>
+            🎨 Website is Ready & Working!
+        </h2>
+
+        <div class="highlight-box">
+            <h3>✅ Your Website is Fully Functional</h3>
+            <p><strong>✓</strong> You can test it locally immediately</p>
+            <p><strong>✓</strong> You can deploy it to GitHub Pages</p>
+            <p><strong>✓</strong> You can add real images later (not required)</p>
+            <p><strong>✓</strong> You can share it directly with farmers</p>
+            <p><strong>✓</strong> Zero configuration or build process needed</p>
+            <p class="cta">
+                Just open <code>index.html</code> to see it in action! 🚀
+            </p>
+        </div>
+
+        <!-- Project Stats -->
+        <div class="card">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1rem;">
+                📊 Project Statistics
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                <div style="text-align: center; padding: 0.75rem; background: #f0f9f4; border-radius: 8px;">
+                    <div style="font-size: 32px; font-weight: 700; color: var(--primary-green);">4</div>
+                    <div style="color: var(--text-gray); font-size: 14px;">Categories</div>
+                </div>
+                <div style="text-align: center; padding: 0.75rem; background: #f0f9f4; border-radius: 8px;">
+                    <div style="font-size: 32px; font-weight: 700; color: var(--primary-green);">56</div>
+                    <div style="color: var(--text-gray); font-size: 14px;">Total Items</div>
+                </div>
+                <div style="text-align: center; padding: 0.75rem; background: #f0f9f4; border-radius: 8px;">
+                    <div style="font-size: 32px; font-weight: 700; color: var(--primary-green);">2</div>
+                    <div style="color: var(--text-gray); font-size: 14px;">Languages</div>
+                </div>
+                <div style="text-align: center; padding: 0.75rem; background: #f0f9f4; border-radius: 8px;">
+                    <div style="font-size: 32px; font-weight: 700; color: var(--primary-green);">0</div>
+                    <div style="color: var(--text-gray); font-size: 14px;">Dependencies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Breakdown -->
+        <div class="card">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1rem;">
+                🗂️ Content Breakdown
+            </h3>
+            <div style="line-height: 1.8; color: var(--text-dark);">
+                <div>🥕 <strong>Vegetables (तरकारी)</strong> - 16 items</div>
+                <div>🌾 <strong>Crops (पिके)</strong> - 15 items</div>
+                <div>🌸 <strong>Flowers (फुले)</strong> - 11 items</div>
+                <div>🍎 <strong>Fruits (फळे)</strong> - 14 items</div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="card"
+            style="background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); border: 2px solid #c8e6c9;">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1rem;">
+                🔗 Quick Access
+            </h3>
+            <div style="display: grid; gap: 0.75rem;">
+                <a href="index.html"
+                    style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: white; border-radius: 8px; text-decoration: none; color: var(--text-dark); box-shadow: 0 2px 4px var(--shadow);">
+                    <i class="fas fa-home" style="color: var(--primary-green); font-size: 20px;"></i>
+                    <div>
+                        <div style="font-weight: 700;">Homepage</div>
+                        <div style="font-size: 12px; color: var(--text-gray);">View the main website</div>
+                    </div>
+                </a>
+                <a href="categories.html"
+                    style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: white; border-radius: 8px; text-decoration: none; color: var(--text-dark); box-shadow: 0 2px 4px var(--shadow);">
+                    <i class="fas fa-th-large" style="color: var(--primary-green); font-size: 20px;"></i>
+                    <div>
+                        <div style="font-weight: 700;">Categories</div>
+                        <div style="font-size: 12px; color: var(--text-gray);">Browse all 4 categories</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Message -->
+        <div
+            style="text-align: center; padding: 2rem 1rem; margin-top: 2rem; border-top: 2px solid var(--border-light);">
+            <p style="font-size: 18px; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+                Built with ❤️ for Farmers
+            </p>
+            <p style="font-size: 14px; color: var(--text-gray); margin: 0;">
+                All documentation files are in the project root directory
+            </p>
+        </div>
+
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-to-home">
+            <i class="fas fa-home"></i>
+            Back to Homepage
+        </a>
+    </div>
+</body>
+
+</html>

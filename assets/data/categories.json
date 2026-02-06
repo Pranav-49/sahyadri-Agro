@@ -35,68 +35,348 @@
   ],
   "items": {
     "vegetables": [
-      {"id": "tomato", "nameEn": "Tomato", "nameMr": "टोमॅटो", "image": "./assets/images/items/tomato.jpg"},
-      {"id": "brinjal", "nameEn": "Brinjal", "nameMr": "वांगी", "image": "./assets/images/items/brinjal.jpg"},
-      {"id": "chilli", "nameEn": "Chilli", "nameMr": "मिरची", "image": "./assets/images/items/chilli.jpg"},
-      {"id": "capsicum", "nameEn": "Capsicum", "nameMr": "ढोबळी मिरची", "image": "./assets/images/items/capsicum.jpg"},
-      {"id": "ladyfinger", "nameEn": "Ladyfinger", "nameMr": "भेंडी", "image": "./assets/images/items/ladyfinger.jpg"},
-      {"id": "spinach", "nameEn": "Spinach", "nameMr": "पालक", "image": "./assets/images/items/spinach.jpg"},
-      {"id": "coriander", "nameEn": "Coriander", "nameMr": "कोथिंबीर", "image": "./assets/images/items/coriander.jpg"},
-      {"id": "cabbage", "nameEn": "Cabbage", "nameMr": "कोबी", "image": "./assets/images/items/cabbage.jpg"},
-      {"id": "cauliflower", "nameEn": "Cauliflower", "nameMr": "फुलकोबी", "image": "./assets/images/items/cauliflower.jpg"},
-      {"id": "cucumber", "nameEn": "Cucumber", "nameMr": "काकडी", "image": "./assets/images/items/cucumber.jpg"},
-      {"id": "drumstick", "nameEn": "Drumstick", "nameMr": "शेवगा", "image": "./assets/images/items/drumstick.jpg"},
-      {"id": "carrot", "nameEn": "Carrot", "nameMr": "गाजर", "image": "./assets/images/items/carrot.jpg"},
-      {"id": "garlic", "nameEn": "Garlic", "nameMr": "लसूण", "image": "./assets/images/items/Garlic.jpg"},
-      {"id": "ginger", "nameEn": "Ginger", "nameMr": "आले", "image": "./assets/images/items/Ginger.jpg"},
-      {"id": "beetroot", "nameEn": "Beetroot", "nameMr": "बीट", "image": "./assets/images/items/Beetroot.jpg"},
-      {"id": "bittergourd", "nameEn": "Bitter Gourd", "nameMr": "कारले", "image": "./assets/images/items/Bitter grout.jpg"}
+      {
+        "id": "tomato",
+        "nameEn": "Tomato",
+        "nameMr": "टोमॅटो",
+        "image": "./assets/images/items/tomato.jpg"
+      },
+      {
+        "id": "brinjal",
+        "nameEn": "Brinjal",
+        "nameMr": "वांगी",
+        "image": "./assets/images/items/brinjal.jpg"
+      },
+      {
+        "id": "chilli",
+        "nameEn": "Chilli",
+        "nameMr": "मिरची",
+        "image": "./assets/images/items/chilli.jpg"
+      },
+      {
+        "id": "capsicum",
+        "nameEn": "Capsicum",
+        "nameMr": "ढोबळी मिरची",
+        "image": "./assets/images/items/capsicum.jpg"
+      },
+      {
+        "id": "ladyfinger",
+        "nameEn": "Ladyfinger",
+        "nameMr": "भेंडी",
+        "image": "./assets/images/items/ladyfinger.jpg"
+      },
+      {
+        "id": "spinach",
+        "nameEn": "Spinach",
+        "nameMr": "पालक",
+        "image": "./assets/images/items/spinach.jpg"
+      },
+      {
+        "id": "coriander",
+        "nameEn": "Coriander",
+        "nameMr": "कोथिंबीर",
+        "image": "./assets/images/items/coriander.jpg"
+      },
+      {
+        "id": "cabbage",
+        "nameEn": "Cabbage",
+        "nameMr": "कोबी",
+        "image": "./assets/images/items/cabbage.jpg"
+      },
+      {
+        "id": "cauliflower",
+        "nameEn": "Cauliflower",
+        "nameMr": "फुलकोबी",
+        "image": "./assets/images/items/cauliflower.jpg"
+      },
+      {
+        "id": "cucumber",
+        "nameEn": "Cucumber",
+        "nameMr": "काकडी",
+        "image": "./assets/images/items/cucumber.jpg"
+      },
+      {
+        "id": "drumstick",
+        "nameEn": "Drumstick",
+        "nameMr": "शेवगा",
+        "image": "./assets/images/items/drumstick.jpg"
+      },
+      {
+        "id": "carrot",
+        "nameEn": "Carrot",
+        "nameMr": "गाजर",
+        "image": "./assets/images/items/carrot.jpg"
+      },
+      {
+        "id": "garlic",
+        "nameEn": "Garlic",
+        "nameMr": "लसूण",
+        "image": "./assets/images/items/Garlic.jpg"
+      },
+      {
+        "id": "ginger",
+        "nameEn": "Ginger",
+        "nameMr": "आले",
+        "image": "./assets/images/items/Ginger.jpg"
+      },
+      {
+        "id": "beetroot",
+        "nameEn": "Beetroot",
+        "nameMr": "बीट",
+        "image": "./assets/images/items/Beetroot.jpg"
+      },
+      {
+        "id": "bittergourd",
+        "nameEn": "Bitter Gourd",
+        "nameMr": "कारले",
+        "image": "./assets/images/items/Bitter grout.jpg"
+      }
     ],
     "crops": [
-      {"id": "sugarcane", "nameEn": "Sugarcane", "nameMr": "ऊस", "image": "./assets/images/items/sugarcane.jpg"},
-      {"id": "corn", "nameEn": "Corn", "nameMr": "मका", "image": "./assets/images/items/corn.jpg"},
-      {"id": "wheat", "nameEn": "Wheat", "nameMr": "गहू", "image": "./assets/images/items/wheat.jpg"},
-      {"id": "jowar", "nameEn": "Jowar", "nameMr": "ज्वारी", "image": "./assets/images/items/jowar.jpg"},
-      {"id": "onion", "nameEn": "Onion", "nameMr": "कांदा", "image": "./assets/images/items/onion.jpg"},
-      {"id": "groundnut", "nameEn": "Groundnut", "nameMr": "भुईमूग", "image": "./assets/images/items/groundnut.jpg"},
-      {"id": "greengram", "nameEn": "Green Gram", "nameMr": "मूग", "image": "./assets/images/items/greengram.jpg"},
-      {"id": "blackgram", "nameEn": "Black Gram", "nameMr": "उडीद", "image": "./assets/images/items/blackgram.jpg"},
-      {"id": "lemon", "nameEn": "Lemon", "nameMr": "लिंबू", "image": "./assets/images/items/lemon.jpg"},
-      {"id": "soybean", "nameEn": "Soybean", "nameMr": "सोयाबीन", "image": "./assets/images/items/soybean.jpg"},
-      {"id": "greenpeas", "nameEn": "Green Peas", "nameMr": "वाटाणा", "image": "./assets/images/items/greenpeas.jpg"},
-      {"id": "mothbean", "nameEn": "Moth Bean", "nameMr": "मटकी", "image": "./assets/images/items/mothbean.jpg"},
-      {"id": "pigeonpea", "nameEn": "Pigeon Pea", "nameMr": "तूर", "image": "./assets/images/items/pigeonpea.jpg"},
-      {"id": "chickpea", "nameEn": "Chickpea", "nameMr": "हरभरा", "image": "./assets/images/items/chickpea.jpg"},
-      {"id": "cotton", "nameEn": "Cotton", "nameMr": "कापूस", "image": "./assets/images/items/cotton.jpg"}
+      {
+        "id": "sugarcane",
+        "nameEn": "Sugarcane",
+        "nameMr": "ऊस",
+        "image": "./assets/images/items/sugarcane.jpg"
+      },
+      {
+        "id": "corn",
+        "nameEn": "Corn",
+        "nameMr": "मका",
+        "image": "./assets/images/items/corn.jpg"
+      },
+      {
+        "id": "wheat",
+        "nameEn": "Wheat",
+        "nameMr": "गहू",
+        "image": "./assets/images/items/wheat.jpg"
+      },
+      {
+        "id": "jowar",
+        "nameEn": "Jowar",
+        "nameMr": "ज्वारी",
+        "image": "./assets/images/items/jowar.jpg"
+      },
+      {
+        "id": "onion",
+        "nameEn": "Onion",
+        "nameMr": "कांदा",
+        "image": "./assets/images/items/onion.jpg"
+      },
+      {
+        "id": "groundnut",
+        "nameEn": "Groundnut",
+        "nameMr": "भुईमूग",
+        "image": "./assets/images/items/groundnut.jpg"
+      },
+      {
+        "id": "greengram",
+        "nameEn": "Green Gram",
+        "nameMr": "मूग",
+        "image": "./assets/images/items/greengram.jpg"
+      },
+      {
+        "id": "blackgram",
+        "nameEn": "Black Gram",
+        "nameMr": "उडीद",
+        "image": "./assets/images/items/blackgram.jpg"
+      },
+      {
+        "id": "lemon",
+        "nameEn": "Lemon",
+        "nameMr": "लिंबू",
+        "image": "./assets/images/items/lemon.jpg"
+      },
+      {
+        "id": "soybean",
+        "nameEn": "Soybean",
+        "nameMr": "सोयाबीन",
+        "image": "./assets/images/items/soybean.jpg"
+      },
+      {
+        "id": "greenpeas",
+        "nameEn": "Green Peas",
+        "nameMr": "वाटाणा",
+        "image": "./assets/images/items/greenpeas.jpg"
+      },
+      {
+        "id": "mothbean",
+        "nameEn": "Moth Bean",
+        "nameMr": "मटकी",
+        "image": "./assets/images/items/mothbean.jpg"
+      },
+      {
+        "id": "pigeonpea",
+        "nameEn": "Pigeon Pea",
+        "nameMr": "तूर",
+        "image": "./assets/images/items/pigeonpea.jpg"
+      },
+      {
+        "id": "chickpea",
+        "nameEn": "Chickpea",
+        "nameMr": "हरभरा",
+        "image": "./assets/images/items/chickpea.jpg"
+      },
+      {
+        "id": "cotton",
+        "nameEn": "Cotton",
+        "nameMr": "कापूस",
+        "image": "./assets/images/items/cotton.jpg"
+      }
     ],
     "flowers": [
-      {"id": "rose", "nameEn": "Rose", "nameMr": "गुलाब", "image": "./assets/images/items/rose.jpg"},
-      {"id": "marigold", "nameEn": "Marigold", "nameMr": "झेंडू", "image": "./assets/images/items/marigold.jpg"},
-      {"id": "sunflower", "nameEn": "Sunflower", "nameMr": "सूर्यफूल", "image": "./assets/images/items/sunflower.jpg"},
-      {"id": "jasmine", "nameEn": "Jasmine", "nameMr": "मोगरा", "image": "./assets/images/items/jasmine.jpg"},
-      {"id": "lavender", "nameEn": "Lavender", "nameMr": "लॅव्हेंडर", "image": "./assets/images/items/lavender.jpg"},
-      {"id": "chrysanthemum", "nameEn": "Chrysanthemum", "nameMr": "शेवंती", "image": "./assets/images/items/chrysanthemum.jpg"},
-      {"id": "tulip", "nameEn": "Tulip", "nameMr": "ट्युलिप", "image": "./assets/images/items/tulip.jpg"},
-      {"id": "gerbera", "nameEn": "Gerbera Daisy", "nameMr": "जर्बेरा", "image": "./assets/images/items/gerbera.jpg"},
-      {"id": "hibiscus", "nameEn": "Hibiscus", "nameMr": "जास्वंद", "image": "./assets/images/items/hibiscus.jpg"},
-      {"id": "lotus", "nameEn": "Lotus", "nameMr": "कमळ", "image": "./assets/images/items/lotus.jpg"},
-      {"id": "safflower", "nameEn": "Safflower", "nameMr": "करडई", "image": "./assets/images/items/safflower.jpg"}
+      {
+        "id": "rose",
+        "nameEn": "Rose",
+        "nameMr": "गुलाब",
+        "image": "./assets/images/items/rose.jpg"
+      },
+      {
+        "id": "marigold",
+        "nameEn": "Marigold",
+        "nameMr": "झेंडू",
+        "image": "./assets/images/items/marigold.jpg"
+      },
+      {
+        "id": "sunflower",
+        "nameEn": "Sunflower",
+        "nameMr": "सूर्यफूल",
+        "image": "./assets/images/items/sunflower.jpg"
+      },
+      {
+        "id": "jasmine",
+        "nameEn": "Jasmine",
+        "nameMr": "मोगरा",
+        "image": "./assets/images/items/jasmine.jpg"
+      },
+      {
+        "id": "lavender",
+        "nameEn": "Lavender",
+        "nameMr": "लॅव्हेंडर",
+        "image": "./assets/images/items/lavender.jpg"
+      },
+      {
+        "id": "chrysanthemum",
+        "nameEn": "Chrysanthemum",
+        "nameMr": "शेवंती",
+        "image": "./assets/images/items/chrysanthemum.jpg"
+      },
+      {
+        "id": "tulip",
+        "nameEn": "Tulip",
+        "nameMr": "ट्युलिप",
+        "image": "./assets/images/items/tulip.jpg"
+      },
+      {
+        "id": "gerbera",
+        "nameEn": "Gerbera Daisy",
+        "nameMr": "जर्बेरा",
+        "image": "./assets/images/items/gerbera.jpg"
+      },
+      {
+        "id": "hibiscus",
+        "nameEn": "Hibiscus",
+        "nameMr": "जास्वंद",
+        "image": "./assets/images/items/hibiscus.jpg"
+      },
+      {
+        "id": "lotus",
+        "nameEn": "Lotus",
+        "nameMr": "कमळ",
+        "image": "./assets/images/items/lotus.jpg"
+      },
+      {
+        "id": "safflower",
+        "nameEn": "Safflower",
+        "nameMr": "करडई",
+        "image": "./assets/images/items/safflower.jpg"
+      }
     ],
     "fruits": [
-      {"id": "mango", "nameEn": "Mango", "nameMr": "आंबा", "image": "./assets/images/items/mango.jpg"},
-      {"id": "papaya", "nameEn": "Papaya", "nameMr": "पपई", "image": "./assets/images/items/papaya.jpg"},
-      {"id": "watermelon", "nameEn": "Watermelon", "nameMr": "टरबूज", "image": "./assets/images/items/watermelon.jpg"},
-      {"id": "coconut", "nameEn": "Coconut", "nameMr": "नारळ", "image": "./assets/images/items/coconut.jpg"},
-      {"id": "sapota", "nameEn": "Sapota", "nameMr": "चिकू", "image": "./assets/images/items/sapota.jpg"},
-      {"id": "dragonfruit", "nameEn": "Dragon Fruit", "nameMr": "ड्रॅगन फळ", "image": "./assets/images/items/dragonfruit.jpg"},
-      {"id": "amla", "nameEn": "Amla", "nameMr": "आवळा", "image": "./assets/images/items/amla.jpg"},
-      {"id": "jamun", "nameEn": "Jamun", "nameMr": "जांभूळ", "image": "./assets/images/items/jamun.jpg"},
-      {"id": "banana", "nameEn": "Banana", "nameMr": "केळी", "image": "./assets/images/items/banana.jpg"},
-      {"id": "pomegranate", "nameEn": "Pomegranate", "nameMr": "डाळिंब", "image": "./assets/images/items/pomegranate.jpg"},
-      {"id": "grapes", "nameEn": "Grapes", "nameMr": "द्राक्षे", "image": "./assets/images/items/grapes.jpg"},
-      {"id": "guava", "nameEn": "Guava", "nameMr": "पेरू", "image": "./assets/images/items/guava.jpg"},
-      {"id": "custardapple", "nameEn": "Custard Apple", "nameMr": "सीताफळ", "image": "./assets/images/items/custardapple.jpg"},
-      {"id": "ber", "nameEn": "Ber", "nameMr": "बोर", "image": "./assets/images/items/ber.jpg"}
+      {
+        "id": "mango",
+        "nameEn": "Mango",
+        "nameMr": "आंबा",
+        "image": "./assets/images/items/mango.jpg"
+      },
+      {
+        "id": "papaya",
+        "nameEn": "Papaya",
+        "nameMr": "पपई",
+        "image": "./assets/images/items/papaya.jpg"
+      },
+      {
+        "id": "watermelon",
+        "nameEn": "Watermelon",
+        "nameMr": "टरबूज",
+        "image": "./assets/images/items/watermelon.jpg"
+      },
+      {
+        "id": "coconut",
+        "nameEn": "Coconut",
+        "nameMr": "नारळ",
+        "image": "./assets/images/items/coconut.jpg"
+      },
+      {
+        "id": "sapota",
+        "nameEn": "Sapota",
+        "nameMr": "चिकू",
+        "image": "./assets/images/items/sapota.jpg"
+      },
+      {
+        "id": "dragonfruit",
+        "nameEn": "Dragon Fruit",
+        "nameMr": "ड्रॅगन फळ",
+        "image": "./assets/images/items/dragonfruit.jpg"
+      },
+      {
+        "id": "amla",
+        "nameEn": "Amla",
+        "nameMr": "आवळा",
+        "image": "./assets/images/items/amla.jpg"
+      },
+      {
+        "id": "jamun",
+        "nameEn": "Jamun",
+        "nameMr": "जांभूळ",
+        "image": "./assets/images/items/jamun.jpg"
+      },
+      {
+        "id": "banana",
+        "nameEn": "Banana",
+        "nameMr": "केळी",
+        "image": "./assets/images/items/banana.jpg"
+      },
+      {
+        "id": "pomegranate",
+        "nameEn": "Pomegranate",
+        "nameMr": "डाळिंब",
+        "image": "./assets/images/items/pomegranate.jpg"
+      },
+      {
+        "id": "grapes",
+        "nameEn": "Grapes",
+        "nameMr": "द्राक्षे",
+        "image": "./assets/images/items/grapes.jpg"
+      },
+      {
+        "id": "guava",
+        "nameEn": "Guava",
+        "nameMr": "पेरू",
+        "image": "./assets/images/items/guava.jpg"
+      },
+      {
+        "id": "custardapple",
+        "nameEn": "Custard Apple",
+        "nameMr": "सीताफळ",
+        "image": "./assets/images/items/custardapple.jpg"
+      },
+      {
+        "id": "ber",
+        "nameEn": "Ber",
+        "nameMr": "बोर",
+        "image": "./assets/images/items/ber.jpg"
+      }
     ]
   }
 }

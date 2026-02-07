@@ -1,14 +1,6 @@
 {
   "categories": [
     {
-      "id": "vegetables",
-      "nameEn": "Vegetables",
-      "nameMr": "तरकारी",
-      "icon": "🥕",
-      "count": 16,
-      "image": "./assets/images/categories/vegetables.jpg"
-    },
-    {
       "id": "crops",
       "nameEn": "Crops",
       "nameMr": "पिके",
@@ -17,20 +9,28 @@
       "image": "./assets/images/categories/crops.jpg"
     },
     {
-      "id": "flowers",
-      "nameEn": "Flowers",
-      "nameMr": "फुले",
-      "icon": "🌸",
-      "count": 11,
-      "image": "./assets/images/categories/flowers.jpg"
-    },
-    {
       "id": "fruits",
       "nameEn": "Fruits",
       "nameMr": "फळे",
       "icon": "🍎",
       "count": 14,
       "image": "./assets/images/categories/fruits.jpg"
+    },
+    {
+      "id": "vegetables",
+      "nameEn": "Vegetables",
+      "nameMr": "तरकारी",
+      "icon": "🥕",
+      "count": 16,
+      "image": "./assets/images/categories/vegetables.jpg"
+    },
+    {
+      "id": "flowers",
+      "nameEn": "Flowers",
+      "nameMr": "फुले",
+      "icon": "🌸",
+      "count": 11,
+      "image": "./assets/images/categories/flowers.jpg"
     }
   ],
   "items": {

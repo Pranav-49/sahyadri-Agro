@@ -5,6 +5,7 @@ const valueTranslations = {
     'Cool': 'थंड',
     'Tropical': 'उष्णकटिबंधीय',
     'Warm, humid': 'उष्ण, दमट',
+    'Coastal tropical': 'किनारपट्टीचा उष्णकटिबंधीय',
 
     // Rainfall
     'Moderate': 'मध्यम',
@@ -16,6 +17,11 @@ const valueTranslations = {
     'Loamy': 'दुमट',
     'Sandy loam': 'वालुकामय दुमट',
     'Deep loam': 'खोल दुमट',
+    'Well-drained sandy': 'चांगला निचरा असलेली वालुकामय',
+    'Laterite': 'लॅटेराइट',
+    'Red soil': 'लाल माती',
+    'Black soil': 'काळी माती',
+    'Alluvial': 'जलोढ',
 
     // Sunlight
     'Full Sun': 'पूर्ण सूर्यप्रकाश',
@@ -30,6 +36,8 @@ const valueTranslations = {
     'Jan–Feb, Oct': 'जाने–फेब्रु, ऑक्टो',
     'June–July': 'जून–जुलै',
     'April–May': 'एप्रिल–मे',
+    'Year-round': 'वर्षभर',
+    'All year': 'वर्षभर',
 
     // Irrigation
     'Regular': 'नियमित',
@@ -38,6 +46,13 @@ const valueTranslations = {
     'Frequent, light': 'वारंवार, हलके',
     'Critical stages': 'गंभीर अवस्थेत',
     'Immediate use': 'तात्काळ वापर',
+    'Regular in dry season': 'कोरड्या हंगामात नियमित',
+    'Drip/sprinkler': 'ठिबक/फवारणी',
+    'Weekly': 'साप्ताहिक',
+    'Bi-weekly': 'पंधरवडा',
+    '2–3 irrigations': '२–३ सिंचन',
+    '3–5 irrigations': '३–५ सिंचन',
+    '1–2 irrigations': '१–२ सिंचन',
 
     // Fertilizer
     'NPK balanced': 'NPK संतुलित',
@@ -49,6 +64,7 @@ const valueTranslations = {
     'Low nitrogen': 'कमी नायट्रोजन',
     'Low': 'कमी',
     'Moderate NPK': 'मध्यम NPK',
+    'Potassium rich': 'पोटॅशियम समृद्ध',
 
     // Pests
     'Fruit borer': 'फळ पोखरणारा किडा',
@@ -68,6 +84,13 @@ const valueTranslations = {
     'Borer': 'पोखरणारा',
     'Stem borer': 'खोड पोखरणारा',
     'Shoot fly': 'अंकुर माशी',
+    'Rhinoceros beetle': 'गेंडा बीटल',
+    'Red palm weevil': 'लाल ताड गांडूळ',
+    'Scale insects': 'स्केल किटक',
+    'Caterpillar': 'अळी',
+    'Mealy bugs': 'मीली बग्ज',
+    'Leaf hopper': 'लीफ हॉपर',
+    'Termites': 'दीमक',
 
     // Diseases
     'Leaf curl': 'पाने कुरळे होणे',
@@ -89,6 +112,12 @@ const valueTranslations = {
     'Grain mold': 'दाण्यावर बुरशी',
     'Tikka disease': 'टिक्का रोग',
     'Yellow mosaic': 'पिवळा मोझॅइक',
+    'Bud rot': 'कळी सडणे',
+    'Anthracnose': 'अँथ्रॅक्नोज',
+    'Powdery mildew': 'पांढरी बुरशी',
+    'Fruit rot': 'फळ सडणे',
+    'Stem bleeding': 'खोडातून रक्तस्राव',
+    'Damping off': 'बुरशी पडणे',
 
     // Prevention
     'Crop rotation and neem spray': 'पीक आवर्तन आणि कडुलिंबाची फवारणी',
@@ -108,6 +137,10 @@ const valueTranslations = {
     'Neem spray': 'कडुलिंबाची फवारणी',
     'Healthy setts': 'निरोगी सेट्स',
     'Seed treatment': 'बियाणे उपचार',
+    'Sanitation': 'स्वच्छता',
+    'Mulching': 'पालापाचोळा',
+    'Integrated pest management': 'एकात्मिक कीड व्यवस्थापन',
+    'Regular inspection': 'नियमित तपासणी',
 
     // Market use
     'Vegetable, processing': 'भाजीपाला, प्रक्रिया',
@@ -133,7 +166,13 @@ const valueTranslations = {
     'Medicinal': 'औषधी',
     'Juice': 'रस',
     'Dried fruit': 'सुके फळ',
-    'Wine': 'वाईन'
+    'Wine': 'वाईन',
+    'Fruit, oil, water': 'फळ, तेल, पाणी',
+    'Processing': 'प्रक्रिया',
+    'Export': 'निर्यात',
+    'Fresh consumption': 'ताजे सेवन',
+    'Tender coconut': 'कोवळा नारळ',
+    'Copra': 'खोबरे'
 };
 
 // Function to translate a value
